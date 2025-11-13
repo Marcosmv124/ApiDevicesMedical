@@ -22,7 +22,7 @@ namespace AppDevicesMedical.Models
         public DbSet<Categoria> Categoria { get; set; }
         public DbSet<Normas> Normas { get; set; }
 
-        public DbSet<Dispositivo> Dispositivos { get; set; }
+        public DbSet<Dispositivosdev> Dispositivodv { get; set; }
         public DbSet<Auditoria> Auditoria { get; set; }
         public DbSet<Examen> Examenes { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
@@ -46,6 +46,9 @@ namespace AppDevicesMedical.Models
             builder.Entity<Cuarto>()
                 .Property(c => c.Id_cuarto)
                 .ValueGeneratedOnAdd(); // Esto hace que el ID sea auto-incremental
+            builder.Entity<Dispositivosdev>()
+               .Property(c => c.Id_dispositivo)
+               .ValueGeneratedOnAdd(); // Esto hace que el ID sea auto-incremental
 
             builder.Entity<Rol>().HasData(
             new Rol { Id_rol = 1, Nombre_rol = "Admin", Descripcion = "Administrador del sistema" },

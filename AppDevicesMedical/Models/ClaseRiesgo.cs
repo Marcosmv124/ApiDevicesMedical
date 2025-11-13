@@ -16,6 +16,6 @@ namespace AppDevicesMedical.Models
         public string? Descripcion { get; set; }
 
         // Propiedad de navegación para la relación con Dispositivo
-        public virtual ICollection<Dispositivo> Dispositivos { get; set; } = new List<Dispositivo>();
+        public virtual ICollection<Dispositivosdev> Dispositivos { get; set; } = new List<Dispositivosdev>();
     }
 }

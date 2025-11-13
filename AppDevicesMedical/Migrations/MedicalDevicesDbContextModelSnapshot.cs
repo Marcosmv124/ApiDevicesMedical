@@ -224,11 +224,13 @@ namespace AppDevicesMedical.Migrations
                     b.ToTable("Cuarto_Limpio");
                 });
 
-            modelBuilder.Entity("AppDevicesMedical.Models.Dispositivo", b =>
+            modelBuilder.Entity("AppDevicesMedical.Models.Dispositivosdev", b =>
                 {
-                    b.Property<string>("Id_dispositivo")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                    b.Property<int>("Id_dispositivo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_dispositivo"));
 
                     b.Property<string>("Descripcion_detallada")
                         .HasColumnType("nvarchar(max)");
@@ -281,7 +283,7 @@ namespace AppDevicesMedical.Migrations
 
                     b.HasIndex("Id_tipo_dispositivo");
 
-                    b.ToTable("Dispositivos");
+                    b.ToTable("Dispositivodv");
                 });
 
             modelBuilder.Entity("AppDevicesMedical.Models.Especialidad", b =>
@@ -493,7 +495,7 @@ namespace AppDevicesMedical.Migrations
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("AppDevicesMedical.Models.Dispositivo", b =>
+            modelBuilder.Entity("AppDevicesMedical.Models.Dispositivosdev", b =>
                 {
                     b.HasOne("AppDevicesMedical.Models.Categoria", "Categoria")
                         .WithMany()
