@@ -363,6 +363,115 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AppDevicesMedical.Controllers.ClaseRiesgoController",
+    "Method": "GetClaseRiesgo",
+    "RelativePath": "api/ClaseRiesgo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AppDevicesMedical.DTOs.ClaseRiesgoDto, AppDevicesMedical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.ClaseRiesgoController",
+    "Method": "PostClaseRiesgo",
+    "RelativePath": "api/ClaseRiesgo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "AppDevicesMedical.DTOs.ClaseRiesgoCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AppDevicesMedical.DTOs.ClaseRiesgoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.ClaseRiesgoController",
+    "Method": "GetClaseRiesgo",
+    "RelativePath": "api/ClaseRiesgo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AppDevicesMedical.DTOs.ClaseRiesgoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.ClaseRiesgoController",
+    "Method": "PutClaseRiesgo",
+    "RelativePath": "api/ClaseRiesgo/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "claseRiesgo",
+        "Type": "AppDevicesMedical.Models.ClaseRiesgo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.ClaseRiesgoController",
+    "Method": "DeleteClaseRiesgo",
+    "RelativePath": "api/ClaseRiesgo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AppDevicesMedical.Controllers.CuartosController",
     "Method": "GetCuartos",
     "RelativePath": "api/Cuartos",
@@ -470,6 +579,52 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.DispositivosController",
+    "Method": "GetDispositivos",
+    "RelativePath": "api/Dispositivos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AppDevicesMedical.DTOs.DispositivoCreateDto, AppDevicesMedical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.DispositivosController",
+    "Method": "PostDispositivo",
+    "RelativePath": "api/Dispositivos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDto",
+        "Type": "AppDevicesMedical.DTOs.DispositivoCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AppDevicesMedical.DTOs.DispositivoCreateDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "AppDevicesMedical.Controllers.EspecialidadesController",

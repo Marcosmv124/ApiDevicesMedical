@@ -21,14 +21,14 @@ namespace AppDevicesMedical.Controllers
             _context = context;
         }
 
-        [Authorize]
+      
         // GET: api/Categorias
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Categoria>>> GetCategoria()
         {
             return await _context.Categoria.ToListAsync();
         }
-        [Authorize(Roles = "ADMIN")]
+       
         // GET: api/Categorias/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Categoria>> GetCategoria(int id)
@@ -42,7 +42,7 @@ namespace AppDevicesMedical.Controllers
 
             return categoria;
         }
-        [Authorize(Roles = "ADMIN")]
+      
         // PUT: api/Categorias/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]

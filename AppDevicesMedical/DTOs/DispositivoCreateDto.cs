@@ -18,11 +18,11 @@ namespace AppDevicesMedical.DTOs
         public string Estado_regulatorio { get; set; } = string.Empty;
         public DateTime Fecha_registro { get; set; }
 
-        // (Opcional) Nombres de navegación
-        public string? CategoriaNombre { get; set; }
-        public string? ClaseRiesgoNombre { get; set; }
-        public string? TipoDispositivoNombre { get; set; }
-        public string? CuartoRequeridoNombre { get; set; }
+        //// (Opcional) Nombres de navegación
+        //public string? CategoriaNombre { get; set; }
+        //public string? ClaseRiesgoNombre { get; set; }
+        //public string? TipoDispositivoNombre { get; set; }
+        //public string? CuartoRequeridoNombre { get; set; }
 
         // Método que convierte el DTO en entidad
         public Dispositivosdev ToEntity()

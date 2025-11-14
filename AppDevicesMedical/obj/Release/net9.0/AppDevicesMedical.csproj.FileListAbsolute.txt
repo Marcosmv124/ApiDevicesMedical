@@ -279,3 +279,4 @@ C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\AppDevicesMedical.pdb
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\AppDevicesMedical.genruntimeconfig.cache
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\ref\AppDevicesMedical.dll
+C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\AppDevicesMedical.sourcelink.json

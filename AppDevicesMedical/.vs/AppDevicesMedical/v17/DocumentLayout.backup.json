@@ -7,8 +7,20 @@
       "RelativeMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|solutionrelative:appdevicesmedical.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|solutionrelative:dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|solutionrelative:services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|solutionrelative:dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\rolscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Migrations\\20251022033003_usuariosAct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251022033003_usuariosAct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\medicaldevicesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Migrations\\20251021192949_RolesNew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251021192949_RolesNew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -91,20 +91,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251021185916_Examen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|solutionrelative:dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Migrations\\20251021160215_New.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251021160215_New.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\dispositivoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|solutionrelative:controllers\\dispositivoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\dipositivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|solutionrelative:models\\dipositivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Migrations\\20251021153957_NewCampos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -133,6 +125,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\auditoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A87B34C2-364B-0944-0B0C-790899C7508E}|AppDevicesMedical.csproj|solutionrelative:controllers\\auditoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\RegisterRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DTOs\\RegisterRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Dipositivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Dipositivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -146,7 +146,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -154,12 +154,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-20T07:23:53.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T07:23:53.68Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -172,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Services\\AuthService.cs",
@@ -180,18 +179,17 @@
               "RelativeToolTip": "Services\\AuthService.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T07:03:59.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T07:03:59.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
               "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Usuario.cs",
               "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAA4wDoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwDoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T07:12:11.384Z",
               "EditorCaption": ""
@@ -211,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Rol.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Rol.cs",
               "RelativeDocumentMoniker": "Models\\Rol.cs",
@@ -219,12 +217,11 @@
               "RelativeToolTip": "Models\\Rol.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T15:23:31.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T15:23:31.122Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Status.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Status.cs",
               "RelativeDocumentMoniker": "Models\\Status.cs",
@@ -232,12 +229,11 @@
               "RelativeToolTip": "Models\\Status.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAUwA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T15:17:04.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T15:17:04.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Services\\IAuthService.cs",
               "RelativeDocumentMoniker": "Services\\IAuthService.cs",
@@ -245,12 +241,11 @@
               "RelativeToolTip": "Services\\IAuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T07:06:08.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T07:06:08.415Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "RolsController.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\RolsController.cs",
               "RelativeDocumentMoniker": "Controllers\\RolsController.cs",
@@ -258,38 +253,37 @@
               "RelativeToolTip": "Controllers\\RolsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T07:05:58.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T07:05:58.653Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppDevicesMedical",
+              "Title": "AppDevicesMedical.csproj",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\AppDevicesMedical.csproj",
               "RelativeDocumentMoniker": "AppDevicesMedical.csproj",
               "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\AppDevicesMedical.csproj",
               "RelativeToolTip": "AppDevicesMedical.csproj",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAqwBcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-10-21T15:43:22.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAADwv0EAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAADwvzsAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T07:12:34.163Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "20251022033003_usuariosAct.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Migrations\\20251022033003_usuariosAct.cs",
               "RelativeDocumentMoniker": "Migrations\\20251022033003_usuariosAct.cs",
@@ -297,12 +291,11 @@
               "RelativeToolTip": "Migrations\\20251022033003_usuariosAct.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAAACcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T03:30:04.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T03:30:04.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MedicalDevicesDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\MedicalDevicesDbContext.cs",
               "RelativeDocumentMoniker": "Models\\MedicalDevicesDbContext.cs",
@@ -310,12 +303,11 @@
               "RelativeToolTip": "Models\\MedicalDevicesDbContext.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAArwBAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T07:04:10.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T07:04:10.51Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "StatusController.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\StatusController.cs",
               "RelativeDocumentMoniker": "Controllers\\StatusController.cs",
@@ -323,12 +315,11 @@
               "RelativeToolTip": "Controllers\\StatusController.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T02:12:40.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T02:12:40.575Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "EspecialidadesController.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\EspecialidadesController.cs",
               "RelativeDocumentMoniker": "Controllers\\EspecialidadesController.cs",
@@ -336,12 +327,11 @@
               "RelativeToolTip": "Controllers\\EspecialidadesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T02:17:36.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T02:17:36.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\LoginDto.cs",
               "RelativeDocumentMoniker": "DTOs\\LoginDto.cs",
@@ -349,12 +339,11 @@
               "RelativeToolTip": "DTOs\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIAwwAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T07:10:31.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T07:10:31.406Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ExamenController.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\ExamenController.cs",
               "RelativeDocumentMoniker": "Controllers\\ExamenController.cs",
@@ -362,8 +351,7 @@
               "RelativeToolTip": "Controllers\\ExamenController.cs",
               "ViewState": "AgIAACIAAAAAAABM0rkOwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T19:08:11.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T19:08:11.492Z"
             },
             {
               "$type": "Document",
@@ -375,8 +363,7 @@
               "RelativeToolTip": "Migrations\\20251021192949_RolesNew.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAABUAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T19:29:50.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T19:29:50.304Z"
             },
             {
               "$type": "Document",
@@ -388,8 +375,7 @@
               "RelativeToolTip": "Models\\Examen.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAUwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T18:57:47.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T18:57:47.906Z"
             },
             {
               "$type": "Document",
@@ -401,8 +387,7 @@
               "RelativeToolTip": "Migrations\\20251021190123_ExamenNew.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T19:01:24.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T19:01:24.009Z"
             },
             {
               "$type": "Document",
@@ -414,12 +399,11 @@
               "RelativeToolTip": "Migrations\\20251021185916_Examen.cs",
               "ViewState": "AgIAAAwAAAAAAICGmOAhwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T18:59:16.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T18:59:16.823Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 24,
               "Title": "20251021153957_NewCampos.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Migrations\\20251021153957_NewCampos.cs",
               "RelativeDocumentMoniker": "Migrations\\20251021153957_NewCampos.cs",
@@ -427,8 +411,7 @@
               "RelativeToolTip": "Migrations\\20251021153957_NewCampos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T15:39:57.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T15:39:57.949Z"
             },
             {
               "$type": "Document",
@@ -440,12 +423,11 @@
               "RelativeToolTip": "Services\\ITokenService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T07:06:13.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T07:06:13.504Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "20251021160215_New.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Migrations\\20251021160215_New.cs",
               "RelativeDocumentMoniker": "Migrations\\20251021160215_New.cs",
@@ -453,12 +435,11 @@
               "RelativeToolTip": "Migrations\\20251021160215_New.cs",
               "ViewState": "AgIAAIwAAAAAAACdZ+ktwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T16:02:15.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T16:02:15.359Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 31,
               "Title": "RegisterRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\RegisterRequestDto.cs",
               "RelativeDocumentMoniker": "DTOs\\RegisterRequestDto.cs",
@@ -466,12 +447,11 @@
               "RelativeToolTip": "DTOs\\RegisterRequestDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T07:10:18.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T07:10:18.625Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "Dipositivos.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Dipositivos.cs",
               "RelativeDocumentMoniker": "Models\\Dipositivos.cs",
@@ -479,12 +459,11 @@
               "RelativeToolTip": "Models\\Dipositivos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T15:41:16.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T15:41:16.845Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "DispositivosController.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\DispositivosController.cs",
               "RelativeDocumentMoniker": "Controllers\\DispositivosController.cs",
@@ -492,12 +471,11 @@
               "RelativeToolTip": "Controllers\\DispositivosController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAAACIAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T15:43:06.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T15:43:06.25Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 25,
               "Title": "20251021153141_NewCampos1.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Migrations\\20251021153141_NewCampos1.cs",
               "RelativeDocumentMoniker": "Migrations\\20251021153141_NewCampos1.cs",
@@ -505,12 +483,11 @@
               "RelativeToolTip": "Migrations\\20251021153141_NewCampos1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T15:31:42.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T15:31:42.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 26,
               "Title": "20251021152023_NewCampos.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Migrations\\20251021152023_NewCampos.cs",
               "RelativeDocumentMoniker": "Migrations\\20251021152023_NewCampos.cs",
@@ -518,12 +495,11 @@
               "RelativeToolTip": "Migrations\\20251021152023_NewCampos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T15:20:24.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T15:20:24.134Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 28,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Services\\DbInitializer.cs",
               "RelativeDocumentMoniker": "Services\\DbInitializer.cs",
@@ -535,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 29,
               "Title": "DispositivoRegistroDto.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\DispositivoRegistroDto.cs",
               "RelativeDocumentMoniker": "DTOs\\DispositivoRegistroDto.cs",
@@ -547,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 27,
               "Title": "TokenService.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "Services\\TokenService.cs",
@@ -559,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 30,
               "Title": "AuditoriasController.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\AuditoriasController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuditoriasController.cs",

@@ -562,3 +562,4 @@ C:\Users\Optiplex 7070\Desktop\API\AppDevicesMedical\obj\Debug\net9.0\AppDevices
 C:\Users\Optiplex 7070\Desktop\API\AppDevicesMedical\obj\Debug\net9.0\AppDevicesMedical.genruntimeconfig.cache
 C:\Users\Optiplex 7070\Desktop\API\AppDevicesMedical\obj\Debug\net9.0\ref\AppDevicesMedical.dll
 C:\Users\Optiplex 7070\Desktop\API\AppDevicesMedical\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Debug\net9.0\AppDevicesMedical.sourcelink.json

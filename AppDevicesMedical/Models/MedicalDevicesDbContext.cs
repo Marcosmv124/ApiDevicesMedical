@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Reflection.Emit;
+using AppDevicesMedical.Models;
 
 namespace AppDevicesMedical.Models
 {
@@ -56,5 +57,7 @@ namespace AppDevicesMedical.Models
              new Rol { Id_rol = 3, Nombre_rol = "Tecnico", Descripcion = "Técnico de dispositivos" }
             );
         }
+    // Hereda las propiedades de login: Id, UserName, PasswordHash
+public DbSet<AppDevicesMedical.Models.ClaseRiesgo> ClaseRiesgo { get; set; } = default!;
     }
 }
