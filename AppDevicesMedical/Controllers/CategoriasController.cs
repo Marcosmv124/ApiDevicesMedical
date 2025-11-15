@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AppDevicesMedical.Models;
 using Microsoft.AspNetCore.Authorization;
+using AppDevicesMedical.Authorization;
 
 namespace AppDevicesMedical.Controllers
 {
@@ -21,15 +17,16 @@ namespace AppDevicesMedical.Controllers
             _context = context;
         }
 
-      
         // GET: api/Categorias
+        [Permiso("VER_CATEGORIAS")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Categoria>>> GetCategoria()
         {
             return await _context.Categoria.ToListAsync();
         }
-       
+
         // GET: api/Categorias/5
+        [Permiso("VER_CATEGORIA")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Categoria>> GetCategoria(int id)
         {
@@ -42,9 +39,9 @@ namespace AppDevicesMedical.Controllers
 
             return categoria;
         }
-      
+
         // PUT: api/Categorias/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Permiso("EDITAR_CATEGORIA")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCategoria(int id, Categoria categoria)
         {
@@ -75,7 +72,7 @@ namespace AppDevicesMedical.Controllers
         }
 
         // POST: api/Categorias
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Permiso("CREAR_CATEGORIA")]
         [HttpPost]
         public async Task<ActionResult<Categoria>> PostCategoria(Categoria categoria)
         {
@@ -86,6 +83,7 @@ namespace AppDevicesMedical.Controllers
         }
 
         // DELETE: api/Categorias/5
+        [Permiso("ELIMINAR_CATEGORIA")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategoria(int id)
         {

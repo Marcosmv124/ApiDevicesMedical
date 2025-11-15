@@ -47,7 +47,9 @@ namespace AppDevicesMedical.DTOs
         public string? Etapa_proceso { get; set; }
         public string? Dependencia_proceso { get; set; }
 
-        [Required]
+        // CORRECCIÓN: Se añade un StringLength grande para capturar descripciones largas
+        // en el DTO antes de que fallen en la DB (donde Protocolo_acceso es nvarchar(max) o similar).
+        [Required, StringLength(500)]
         public string Protocolo_acceso { get; set; } = string.Empty;
 
         public string? Protocolo_validacion { get; set; }
@@ -55,6 +57,7 @@ namespace AppDevicesMedical.DTOs
         public int? Periodo_revalidacion_meses { get; set; }
         public string? Documento_estandar_ref { get; set; }
         public string? Notas_adicionales { get; set; }
+
         // Método que convierte el DTO a la entidad Cuarto
         public Cuarto ToEntity()
         {

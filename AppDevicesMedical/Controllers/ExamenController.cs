@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AppDevicesMedical.Authorization;
+using AppDevicesMedical.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AppDevicesMedical.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace AppDevicesMedical.Controllers
 {
@@ -21,6 +23,7 @@ namespace AppDevicesMedical.Controllers
         }
 
         // GET: api/Examen
+        [Permiso("VER_EXAMENES")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Examen>>> GetExamenes()
         {
@@ -28,6 +31,7 @@ namespace AppDevicesMedical.Controllers
         }
 
         // GET: api/Examen/5
+        [Permiso("VER_EXAMEN")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Examen>> GetExamen(int id)
         {
@@ -43,6 +47,7 @@ namespace AppDevicesMedical.Controllers
 
         // PUT: api/Examen/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Permiso("EDITAR_EXAMEN")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutExamen(int id, Examen examen)
         {
@@ -74,6 +79,7 @@ namespace AppDevicesMedical.Controllers
 
         // POST: api/Examen
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Permiso("CREAR_EXAMEN")]
         [HttpPost]
         public async Task<ActionResult<Examen>> PostExamen(Examen examen)
         {
@@ -84,6 +90,7 @@ namespace AppDevicesMedical.Controllers
         }
 
         // DELETE: api/Examen/5
+        [Permiso("ELIMINAR_EXAMEN")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteExamen(int id)
         {

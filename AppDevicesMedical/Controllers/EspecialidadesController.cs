@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using AppDevicesMedical.Authorization;
 using AppDevicesMedical.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AppDevicesMedical.Controllers
 {
@@ -16,6 +18,7 @@ namespace AppDevicesMedical.Controllers
         }
 
         // GET: api/Especialidades
+        [Permiso("VER_ESPECIALIDADES")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Especialidad>>> GetEspecialidad()
         {
@@ -23,6 +26,7 @@ namespace AppDevicesMedical.Controllers
         }
 
         // GET: api/Especialidades/5
+        [Permiso("VER_ESPECIALIDAD")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Especialidad>> GetEspecialidad(int id)
         {
@@ -38,6 +42,7 @@ namespace AppDevicesMedical.Controllers
 
         // PUT: api/Especialidades/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Permiso("EDITAR_ESPECIALIDAD")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEspecialidad(int id, Especialidad especialidad)
         {
@@ -69,6 +74,7 @@ namespace AppDevicesMedical.Controllers
 
         // POST: api/Especialidades
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Permiso("CREAR_ESPECIALIDAD")]
         [HttpPost]
         public async Task<ActionResult<Especialidad>> PostEspecialidad(Especialidad especialidad)
         {
@@ -79,6 +85,7 @@ namespace AppDevicesMedical.Controllers
         }
 
         // DELETE: api/Especialidades/5
+        [Permiso("ELIMINAR_ESPECIALIDAD")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEspecialidad(int id)
         {

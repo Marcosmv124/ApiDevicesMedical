@@ -351,6 +351,29 @@ namespace AppDevicesMedical.Migrations
                     b.ToTable("Normas");
                 });
 
+            modelBuilder.Entity("AppDevicesMedical.Models.Permiso", b =>
+                {
+                    b.Property<int>("IdPermiso")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPermiso"));
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("IdPermiso");
+
+                    b.ToTable("Permiso");
+                });
+
             modelBuilder.Entity("AppDevicesMedical.Models.Rol", b =>
                 {
                     b.Property<int>("Id_rol")
@@ -390,6 +413,23 @@ namespace AppDevicesMedical.Migrations
                         });
                 });
 
+            modelBuilder.Entity("AppDevicesMedical.Models.RolPermiso", b =>
+                {
+                    b.Property<int>("IdRol")
+                        .HasColumnType("int")
+                        .HasColumnOrder(1);
+
+                    b.Property<int>("IdPermiso")
+                        .HasColumnType("int")
+                        .HasColumnOrder(2);
+
+                    b.HasKey("IdRol", "IdPermiso");
+
+                    b.HasIndex("IdPermiso");
+
+                    b.ToTable("Rol_Permiso");
+                });
+
             modelBuilder.Entity("AppDevicesMedical.Models.Status", b =>
                 {
                     b.Property<int>("Id_status")
@@ -423,7 +463,7 @@ namespace AppDevicesMedical.Migrations
 
                     b.HasKey("Id_tipo");
 
-                    b.ToTable("TipoDispositivo");
+                    b.ToTable("TipoDispositivos");
                 });
 
             modelBuilder.Entity("AppDevicesMedical.Models.Usuario", b =>
@@ -522,6 +562,25 @@ namespace AppDevicesMedical.Migrations
                     b.Navigation("TipoDispositivo");
                 });
 
+            modelBuilder.Entity("AppDevicesMedical.Models.RolPermiso", b =>
+                {
+                    b.HasOne("AppDevicesMedical.Models.Permiso", "Permiso")
+                        .WithMany("RolPermisos")
+                        .HasForeignKey("IdPermiso")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AppDevicesMedical.Models.Rol", "Rol")
+                        .WithMany()
+                        .HasForeignKey("IdRol")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Permiso");
+
+                    b.Navigation("Rol");
+                });
+
             modelBuilder.Entity("AppDevicesMedical.Models.Usuario", b =>
                 {
                     b.HasOne("AppDevicesMedical.Models.Especialidad", "Especialidad")
@@ -552,6 +611,11 @@ namespace AppDevicesMedical.Migrations
             modelBuilder.Entity("AppDevicesMedical.Models.ClaseRiesgo", b =>
                 {
                     b.Navigation("Dispositivos");
+                });
+
+            modelBuilder.Entity("AppDevicesMedical.Models.Permiso", b =>
+                {
+                    b.Navigation("RolPermisos");
                 });
 
             modelBuilder.Entity("AppDevicesMedical.Models.TipoDispositivo", b =>

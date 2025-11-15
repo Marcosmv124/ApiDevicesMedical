@@ -1,6 +1,6 @@
-﻿using AppDevicesMedical.DTOs;
+﻿using AppDevicesMedical.Authorization;
+using AppDevicesMedical.DTOs;
 using AppDevicesMedical.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,11 +11,13 @@ namespace AppDevicesMedical.Controllers
     public class DispositivosController : Controller
     {
         private readonly MedicalDevicesDbContext _context;
-
+        
+        
         public DispositivosController(MedicalDevicesDbContext context)
         {
             _context = context;
         }
+        [Permiso("VER_DISPOSITIVOS")]
         // GET: DispositivosController // GET: api/dispositivos
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DispositivoCreateDto>>> GetDispositivos()
@@ -34,6 +36,7 @@ namespace AppDevicesMedical.Controllers
                 return StatusCode(500, $"Error interno del servidor: {ex.Message}");
             }
         }
+        [Permiso("CREAR_DISPOSITIVOS")]
         // POST: api/Dispositivos
         [HttpPost]
         public async Task<ActionResult<DispositivoCreateDto>> PostDispositivo(DispositivoCreateDto createDto)

@@ -16,5 +16,8 @@ namespace AppDevicesMedical.Models
 
         [StringLength(50)]
         public string? Descripcion { get; set; }
+        // ✅ Propiedad de navegación para la relación con RolPermiso
+        public ICollection<RolPermiso> RolPermisos { get; set; } = new List<RolPermiso>();
+
     }
 }

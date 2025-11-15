@@ -448,8 +448,8 @@
         "IsRequired": true
       },
       {
-        "Name": "claseRiesgo",
-        "Type": "AppDevicesMedical.Models.ClaseRiesgo",
+        "Name": "dto",
+        "Type": "AppDevicesMedical.DTOs.ClaseRiesgoCreateDto",
         "IsRequired": true
       }
     ],
@@ -954,6 +954,74 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AppDevicesMedical.Controllers.RolsController",
+    "Method": "AsignarPermisoARol",
+    "RelativePath": "api/Rols/{idRol}/permisos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRol",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idPermiso",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.RolsController",
+    "Method": "GetPermisosDeRol",
+    "RelativePath": "api/Rols/{idRol}/permisos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRol",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AppDevicesMedical.Models.Permiso, AppDevicesMedical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.RolsController",
+    "Method": "RemoverPermisoDeRol",
+    "RelativePath": "api/Rols/{idRol}/permisos/{idPermiso}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRol",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idPermiso",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AppDevicesMedical.Controllers.StatusController",
     "Method": "GetStatus",
     "RelativePath": "api/Status",
@@ -1050,6 +1118,115 @@
     "ContainingType": "AppDevicesMedical.Controllers.StatusController",
     "Method": "DeleteStatus",
     "RelativePath": "api/Status/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.TipoDispositivoController",
+    "Method": "GetTipoDispositivos",
+    "RelativePath": "api/TipoDispositivo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AppDevicesMedical.DTOs.TipoDispositivoDto, AppDevicesMedical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.TipoDispositivoController",
+    "Method": "PostTipoDispositivo",
+    "RelativePath": "api/TipoDispositivo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "AppDevicesMedical.DTOs.TipoDispositivoCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AppDevicesMedical.Models.TipoDispositivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.TipoDispositivoController",
+    "Method": "GetTipoDispositivo",
+    "RelativePath": "api/TipoDispositivo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AppDevicesMedical.DTOs.TipoDispositivoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.TipoDispositivoController",
+    "Method": "PutTipoDispositivo",
+    "RelativePath": "api/TipoDispositivo/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "AppDevicesMedical.DTOs.TipoDispositivoCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.TipoDispositivoController",
+    "Method": "DeleteTipoDispositivo",
+    "RelativePath": "api/TipoDispositivo/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

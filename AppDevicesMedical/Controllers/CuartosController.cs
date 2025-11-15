@@ -1,4 +1,5 @@
-﻿using AppDevicesMedical.DTOs;
+﻿using AppDevicesMedical.Authorization;
+using AppDevicesMedical.DTOs;
 using AppDevicesMedical.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -23,6 +24,7 @@ namespace AppDevicesMedical.Controllers
         }
 
         // GET: api/Cuartos
+        [Permiso("VER_CUARTOS")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CuartoDto>>> GetCuartos()
         {
@@ -37,67 +39,113 @@ namespace AppDevicesMedical.Controllers
 
                 return Ok(cuartosDto);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+                // Manejo de Error 500 (Mensaje amigable)
+                return StatusCode(500, "Error al obtener la lista de cuartos. Intenta nuevamente o contacta al administrador.");
             }
         }
 
         // GET: api/Cuartos/5
+        [Permiso("VER_CUARTO")]
         [HttpGet("{id}")]
         public async Task<ActionResult<CuartoDto>> GetCuarto(int id)
         {
             try
             {
                 var cuarto = await _context.Cuarto.FindAsync(id);
+
                 if (cuarto == null)
-                    return NotFound($"No se encontró el cuarto con ID {id}");
+                    // Manejo de Error 404
+                    return NotFound($"No se encontró el cuarto con ID {id}.");
 
                 return Ok(new CuartoDto(cuarto));
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+                // Manejo de Error 500
+                return StatusCode(500, "Error al obtener el detalle del cuarto. Intenta nuevamente o contacta al administrador.");
             }
         }
 
         // POST: api/Cuartos
+        [Permiso("CREAR_CUARTO")]
         [HttpPost]
         public async Task<ActionResult<CuartoDto>> PostCuarto(CreateCuartoDto createDto)
         {
+            // --- VALIDACIONES DE DOMINIO/UNICIDAD (Patrón consistente) ---
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            // Corregido: Usar 'Nombre_cuarto' del DTO para validar nulidad/vacío
+            if (string.IsNullOrWhiteSpace(createDto.Nombre_cuarto))
+                return BadRequest("El nombre del cuarto no puede estar vacío.");
+
+            // Corregido: Asumiendo que 'Capacidad_personas' es el campo a validar como positivo
+            // Si necesitas validar otro campo como 'Capacidad_produccion', ajústalo aquí.
+            if (createDto.Capacidad_personas == null || createDto.Capacidad_personas <= 0)
+                return BadRequest("La capacidad de personas debe ser un número positivo.");
+
+            // Corregido: Usar 'Nombre_cuarto' del DTO para validar unicidad
+            var existeNombre = await _context.Cuarto.AnyAsync(c => c.Nombre_cuarto == createDto.Nombre_cuarto);
+            if (existeNombre)
+                // Manejo de Error 409 Conflict
+                return Conflict("Ya existe un cuarto con ese nombre registrado.");
+            // -----------------------------------------------------------
+
             try
             {
-                if (!ModelState.IsValid)
-                    return BadRequest(ModelState);
-
                 var cuarto = createDto.ToEntity();
 
                 _context.Cuarto.Add(cuarto);
                 await _context.SaveChangesAsync();
 
-                // Devolver DTO limpio
+                // Devolver DTO limpio (201 Created)
                 var cuartoDto = new CuartoDto(cuarto);
                 return CreatedAtAction(nameof(GetCuarto), new { id = cuarto.Id_cuarto }, cuartoDto);
             }
-            catch (DbUpdateException ex)
+            catch (DbUpdateException)
             {
-                return StatusCode(500, $"Error al crear el cuarto: {ex.Message}");
+                // Manejo de Error 500 (DbUpdateException)
+                return StatusCode(500, "Error al registrar el cuarto. Verifica los datos o contacta al administrador.");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+                // Manejo de Error 500 (Excepción genérica)
+                return StatusCode(500, "Error interno del servidor al procesar la solicitud.");
             }
         }
 
         // PUT: api/Cuartos/5
+        [Permiso("EDITAR_CUARTO")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCuarto(int id, CreateCuartoDto updateDto)
         {
+            // --- VALIDACIONES DE DOMINIO/UNICIDAD (Patrón consistente) ---
+            // Corregido: Usar 'Nombre_cuarto' del DTO para validar nulidad/vacío
+            if (string.IsNullOrWhiteSpace(updateDto.Nombre_cuarto))
+                return BadRequest("El nombre del cuarto no puede estar vacío.");
+
+            // Corregido: Asumiendo que 'Capacidad_personas' es el campo a validar como positivo
+            if (updateDto.Capacidad_personas == null || updateDto.Capacidad_personas <= 0)
+                return BadRequest("La capacidad de personas debe ser un número positivo.");
+            // -------------------------------------------------------------
+
             try
             {
                 var cuartoExistente = await _context.Cuarto.FindAsync(id);
                 if (cuartoExistente == null)
-                    return NotFound($"No se encontró el cuarto con ID {id}");
+                    return NotFound($"No se encontró el cuarto con ID {id} para actualizar.");
+
+                // --- VALIDACIÓN DE UNICIDAD vs OTROS REGISTROS ---
+                // Corregido: Usar 'Nombre_cuarto' del DTO para validar unicidad
+                var existeOtroConMismoNombre = await _context.Cuarto
+                    .AnyAsync(c => c.Nombre_cuarto == updateDto.Nombre_cuarto && c.Id_cuarto != id);
+
+                if (existeOtroConMismoNombre)
+                    // Manejo de Error 409 Conflict
+                    return Conflict("Ya existe otro cuarto con ese nombre.");
+                // ----------------------------------------------------
 
                 // Convertir DTO a entidad
                 var updatedEntity = updateDto.ToEntity();
@@ -109,114 +157,57 @@ namespace AppDevicesMedical.Controllers
                 _context.Entry(cuartoExistente).CurrentValues.SetValues(updatedEntity);
 
                 await _context.SaveChangesAsync();
-                return NoContent();
+                return NoContent(); // 204 No Content
             }
-            catch (DbUpdateException ex)
+            catch (DbUpdateException)
             {
-                return StatusCode(500, $"Error al actualizar el cuarto: {ex.Message}");
+                // Manejo de Error 500 (DbUpdateException)
+                return StatusCode(500, "Error al actualizar el cuarto. Intenta nuevamente o contacta al administrador.");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+                // Manejo de Error 500 (Excepción genérica)
+                return StatusCode(500, "Error interno del servidor al procesar la solicitud.");
             }
         }
-
-
-
-
         // DELETE: api/Cuartos/5
+        [Permiso("ELIMINAR_CUARTO")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCuarto(int id)
         {
             try
             {
                 var cuarto = await _context.Cuarto.FindAsync(id);
+
                 if (cuarto == null)
-                    return NotFound($"No se encontró el cuarto con ID {id}");
+                    return NotFound($"No se encontró el cuarto con ID {id} para eliminar.");
+
+                // --- VERIFICACIÓN DE DEPENDENCIAS EXPLÍCITA (Patrón consistente) ---
+                // Se verifica si algún Dispositivo está relacionado con este Cuarto
+                var tieneDependencias = await _context.Dispositivodv
+                    .AnyAsync(d => d.Id_cuarto_requerido == id); // Asumiendo que Dispositivo tiene una FK a Cuarto
+
+                if (tieneDependencias)
+                    // Manejo de Error 409 Conflict
+                    return Conflict("No se puede eliminar: hay dispositivos asociados a este cuarto.");
+                // -----------------------------------------------------------------
 
                 _context.Cuarto.Remove(cuarto);
                 await _context.SaveChangesAsync();
 
-                // Retornar mensaje de éxito
-                return Ok(new { mensaje = $"El cuarto con ID {id} se eliminó correctamente." });
+                // Devolver 204 No Content (Estándar para DELETE exitoso)
+                return NoContent();
             }
-            catch (DbUpdateException ex)
+            catch (DbUpdateException)
             {
-                return StatusCode(500, $"Error al eliminar el cuarto: {ex.Message}");
+                // Manejo de Error 500 (DbUpdateException)
+                return StatusCode(500, "Error al eliminar el cuarto. Intenta nuevamente o contacta al administrador.");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+                // Manejo de Error 500 (Excepción genérica)
+                return StatusCode(500, "Error interno del servidor al procesar la solicitud.");
             }
         }
     }
-    //// GET: api/Cuartos/filtrar?clase=Clase9
-    //[HttpGet("filtrar")]
-    //public async Task<ActionResult<IEnumerable<Cuarto>>> FiltrarCuartos(
-    //    [FromQuery] string? clase = null,
-    //    [FromQuery] bool? controlTemperatura = null,
-    //    [FromQuery] bool? controlHumedad = null,
-    //    [FromQuery] int? capacidadMinima = null)
-    //{
-    //    try
-    //    {
-    //        var query = _context.Cuarto.AsQueryable();
-
-    //        if (!string.IsNullOrEmpty(clase))
-    //        {
-    //            query = query.Where(c => c.Clase_cuarto.Contains(clase));
-    //        }
-
-    //        if (controlTemperatura.HasValue)
-    //        {
-    //            query = query.Where(c => c.Control_temperatura == controlTemperatura.Value);
-    //        }
-
-    //        if (controlHumedad.HasValue)
-    //        {
-    //            query = query.Where(c => c.Control_humedad == controlHumedad.Value);
-    //        }
-
-    //        if (capacidadMinima.HasValue)
-    //        {
-    //            query = query.Where(c => c.Capacidad_personas >= capacidadMinima.Value);
-    //        }
-
-    //        var resultados = await query.OrderBy(c => c.Clase_cuarto).ToListAsync();
-    //        return resultados;
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        return StatusCode(500, $"Error interno del servidor: {ex.Message}");
-    //    }
-    //}
-    ///////////////////
-    //// GET: api/Cuartos/estadisticas
-    //[HttpGet("estadisticas")]
-    //public async Task<ActionResult<object>> GetEstadisticas()
-    //{
-    //    try
-    //    {
-    //        var totalCuartos = await _context.Cuarto.CountAsync();
-    //        var conControlTemperatura = await _context.Cuarto.CountAsync(c => c.Control_temperatura);
-    //        var conControlHumedad = await _context.Cuarto.CountAsync(c => c.Control_humedad);
-    //        var capacidadPromedio = await _context.Cuarto.AverageAsync(c => c.Capacidad_personas);
-
-    //        var estadisticas = new
-    //        {
-    //            TotalCuartos = totalCuartos,
-    //            ConControlTemperatura = conControlTemperatura,
-    //            ConControlHumedad = conControlHumedad,
-    //            CapacidadPromedio = Math.Round(capacidadPromedio, 2),
-    //            PorcentajeControlTemperatura = totalCuartos > 0 ?
-    //                Math.Round((double)conControlTemperatura / totalCuartos * 100, 2) : 0
-    //        };
-
-    //        return estadisticas;
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        return StatusCode(500, $"Error interno del servidor: {ex.Message}");
-    //    }
-    //}
 }

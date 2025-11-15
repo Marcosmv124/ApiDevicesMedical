@@ -25,6 +25,8 @@ namespace AppDevicesMedical.Services
         {
             // Buscar al usuario por número de empleado
             var usuario = await context.Usuarios
+                // ✅ CAMBIO AÑADIDO: Incluir la propiedad de navegación Rol para acceder al Nombre_rol
+                .Include(u => u.Rol)
                 .FirstOrDefaultAsync(u => u.NumeroEmpleado == request.NumeroEmpleado);
 
             if (usuario is null)
@@ -38,8 +40,7 @@ namespace AppDevicesMedical.Services
 
             }
 
-            return CrearToken(usuario); // ✅ Ahora sí coincide el tipo
-
+            return CrearToken(usuario);
         }
 
         public async Task<Usuario?> RegisterAsync(UsuarioDto request)
@@ -89,7 +90,7 @@ namespace AppDevicesMedical.Services
             usuario.NumeroEmpleado = request.NumeroEmpleado;
 
             // Actualizar claves foráneas (permitiendo null)
-            usuario.IdRol = request.IdRol; // Si decides permitir null aquí, cambia a int?
+            usuario.IdRol = request.IdRol;
             usuario.IdStatus = request.IdStatus;
             usuario.IdEspecialidad = request.IdEspecialidad;
 
@@ -102,21 +103,30 @@ namespace AppDevicesMedical.Services
             var usuario = await context.Usuarios.FindAsync(id);
             if (usuario is null)
             {
-                return null; // ⬅️ Aquí sí tiene sentido devolver null
+                return null;
             }
 
             context.Usuarios.Remove(usuario);
             await context.SaveChangesAsync();
-            return true; // Eliminación exitosa
+            return true;
         }
 
         public string CrearToken(Usuario usuario)
         {
+            // 1. Obtener el Nombre del Rol (ya cargado por el .Include en LoginAsync)
+            // Si el rol es null por alguna razón, asignamos un valor seguro.
+            string nombreRol = usuario.Rol?.Nombre_rol ?? "SinRol";
+
             var claims = new List<Claim>
             {
              new Claim(ClaimTypes.Name, usuario.NumeroEmpleado),
-              new Claim(ClaimTypes.NameIdentifier, usuario.IdUsuario.ToString())
-             // Puedes agregar más claims como rol, especialidad, etc.
+             new Claim(ClaimTypes.NameIdentifier, usuario.IdUsuario.ToString()),
+
+             // ✅ CAMBIO AÑADIDO: Claim de Rol (para Autorización estándar [Authorize(Roles="...")] o Políticas)
+             new Claim(ClaimTypes.Role, nombreRol),
+
+             // ✅ CAMBIO AÑADIDO: Claim del ID del Rol (para Autorización basada en Permisos lógicos/DB)
+             new Claim("IdRolDB", usuario.IdRol.ToString())
             };
 
             // Leer la clave desde AppSettings:Token

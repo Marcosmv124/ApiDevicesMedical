@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AppDevicesMedical.Authorization;
+using AppDevicesMedical.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AppDevicesMedical.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace AppDevicesMedical.Controllers
 {
@@ -22,12 +24,14 @@ namespace AppDevicesMedical.Controllers
 
         // GET: api/Status
         [HttpGet]
+        [Permiso("VER_STATUS")]
         public async Task<ActionResult<IEnumerable<Status>>> GetStatus()
         {
             return await _context.Status.ToListAsync();
         }
 
         // GET: api/Status/5
+        [Permiso("VER_STATUS_DETALLE")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Status>> GetStatus(int id)
         {
@@ -43,6 +47,7 @@ namespace AppDevicesMedical.Controllers
 
         // PUT: api/Status/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Permiso("EDITAR_STATUS")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutStatus(int id, Status status)
         {
@@ -74,6 +79,7 @@ namespace AppDevicesMedical.Controllers
 
         // POST: api/Status
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Permiso("CREAR_STATUS")]
         [HttpPost]
         public async Task<ActionResult<Status>> PostStatus(Status status)
         {
@@ -98,6 +104,7 @@ namespace AppDevicesMedical.Controllers
         }
 
         // DELETE: api/Status/5
+        [Permiso("ELIMINAR_STATUS")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteStatus(int id)
         {
