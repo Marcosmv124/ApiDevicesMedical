@@ -12,7 +12,8 @@ namespace AppDevicesMedical.Controllers
     [ApiController]
     public class AuthController(IAuthService authService) : ControllerBase
     {
-        [Permiso("Permiso:VER_USUARIO")]
+        //[Permiso("Permiso:VER_USUARIO")]
+        [Permiso("VER_USUARIO")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Usuario>> GetById(int id)
         {
@@ -31,9 +32,9 @@ namespace AppDevicesMedical.Controllers
             return Ok(usuarios);
         }
 
-        [Permiso("Permiso:REGISTRAR_USUARIO")]
+        [Permiso("REGISTRAR_USUARIO")]
         [HttpPost("register")]
-        public async Task<ActionResult<Usuario>> Register(UsuarioDto request)
+        public async Task<ActionResult<UsuarioDto>> Register(UsuarioDto request)
         {
             var user = await authService.RegisterAsync(request);
             if (user is null)
@@ -52,7 +53,7 @@ namespace AppDevicesMedical.Controllers
             return Ok(token);
         }
 
-        [Permiso("Permiso:EDITAR_USUARIO")]
+        [Permiso("EDITAR_USUARIO")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] UsuarioDto request)
         {
@@ -71,7 +72,7 @@ namespace AppDevicesMedical.Controllers
             return Ok(user);
         }
 
-        [Permiso("Permiso:ELIMINAR_USUARIO")]
+        [Permiso("ELIMINAR_USUARIO")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

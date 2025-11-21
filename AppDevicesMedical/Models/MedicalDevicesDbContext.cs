@@ -75,6 +75,31 @@ namespace AppDevicesMedical.Models
                 .Property(t => t.Id_tipo)
                 .ValueGeneratedOnAdd();
 
+            builder.Entity<Dispositivosdev>()
+            .HasOne(d => d.Categoria)
+            .WithMany(c => c.Dispositivos) // necesitas agregar ICollection<Dispositivosdev> en Categoria
+            .HasForeignKey(d => d.Id_categoria)
+            .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<Dispositivosdev>()
+                .HasOne(d => d.ClaseRiesgo)
+                .WithMany(cr => cr.Dispositivos) // idem en ClaseRiesgo
+                .HasForeignKey(d => d.Id_clase_riesgo)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<Dispositivosdev>()
+                .HasOne(d => d.TipoDispositivo)
+                .WithMany(td => td.Dispositivos) // idem en TipoDispositivo
+                .HasForeignKey(d => d.Id_tipo_dispositivo)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<Dispositivosdev>()
+                .HasOne(d => d.CuartoRequerido)
+                .WithMany(cu => cu.Dispositivos) // idem en Cuarto
+                .HasForeignKey(d => d.Id_cuarto_requerido)
+                .OnDelete(DeleteBehavior.Restrict);
+
+
             // ╔══════════════════════════════════════════╗
             // ║   SEED DATA: ROLES BÁSICOS               ║
             // ╚══════════════════════════════════════════╝

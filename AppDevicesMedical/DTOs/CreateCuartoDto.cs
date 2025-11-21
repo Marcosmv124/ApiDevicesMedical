@@ -22,10 +22,10 @@ namespace AppDevicesMedical.DTOs
         // 2. Condiciones ambientales
         public bool Control_temperatura { get; set; } = false;
         public bool Control_humedad { get; set; } = false;
-        public string? Espec_flujo_aire { get; set; }
+        public string Espec_flujo_aire { get; set; }
         public int? Capacidad_hvac_cfm { get; set; }
         public string? Tipo_acondicionamiento { get; set; }
-        public int? Tiempo_reposicion_aire_min { get; set; }
+        public int Tiempo_reposicion_aire_min { get; set; }
 
         // 3. Parámetros de control de contaminación
         public int? Limite_contaminacion_ufc { get; set; }

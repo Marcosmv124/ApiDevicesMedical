@@ -24,7 +24,8 @@ builder.Services.AddCors(options =>
             "https://med-trasnfers-app-res.vercel.app"
         )
         .AllowAnyHeader()
-        .AllowAnyMethod();
+        .AllowAnyMethod()
+        .AllowCredentials(); // si usas Authorization header o cookies
     });
 });
 
@@ -45,6 +46,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = true,
             ValidAudience = builder.Configuration["AppSettings:Audience"],
             ValidateLifetime = true,
+            ClockSkew = TimeSpan.Zero,
             IssuerSigningKey = new SymmetricSecurityKey(
                 Encoding.UTF8.GetBytes(builder.Configuration["AppSettings:Token"]!)
             ),
@@ -52,9 +54,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-// ✅ Registrar el handler personalizado
+// ✅ Handler de autorización por permisos
 builder.Services.AddScoped<IAuthorizationHandler, PermisoRequeridoHandler>();
 
+// ✅ Políticas de permisos (completas)
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("Permiso:VER_ROLES", policy =>
@@ -202,21 +205,39 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("Permiso:ELIMINAR_TIPO_DISPOSITIVO", policy =>
         policy.Requirements.Add(new PermisoRequerido("ELIMINAR_TIPO_DISPOSITIVO")));
 });
-   
-// ✅ Registrar AuthService
+
+// ✅ Servicios de Auth
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
 
 // ✅ Orden correcto de middlewares
-app.UseCors("AllowFrontend");
 app.UseHttpsRedirection();
+app.UseCors("AllowFrontend");
+
+// ✅ Respuesta explícita a OPTIONS (preflight)
+app.Use(async (context, next) =>
+{
+    if (context.Request.Method == "OPTIONS")
+    {
+        context.Response.Headers.Add("Access-Control-Allow-Origin", "https://med-trasnfers-app-res.vercel.app");
+        context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization");
+        context.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+        context.Response.StatusCode = 200;
+        await context.Response.CompleteAsync();
+    }
+    else
+    {
+        await next();
+    }
+});
 
 app.MapOpenApi();
 app.MapScalarApiReference();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.UseStatusCodePages(async context =>
 {
     var response = context.HttpContext.Response;
@@ -229,5 +250,4 @@ app.UseStatusCodePages(async context =>
 });
 
 app.MapControllers();
-
 app.Run();

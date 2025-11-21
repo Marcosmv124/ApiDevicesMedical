@@ -9,12 +9,12 @@ namespace AppDevicesMedical.DTOs
 
         // Datos personales
         public string Nombres { get; set; } = string.Empty;
-        public string ApellidoPaterno { get; set; }
-        public string ApellidoMaterno { get; set; }
+        public string ApellidoPaterno { get; set; } = string.Empty;
+        public string ApellidoMaterno { get; set; } = string.Empty;
         public string NumeroEmpleado { get; set; } = string.Empty;
 
         // Contraseña (solo en registro o cambio)
-        public string? Password { get; set; }
+        public string Password { get; set; } = string.Empty;
 
         // Fecha de creación (nullable para PUT)
         public DateTime? FechaCreacion { get; set; }

@@ -19,5 +19,9 @@ namespace AppDevicesMedical.Models
         [Required]
         [Column(TypeName = "Date")] // Especifica el tipo DATE para la base de datos
         public DateTime Fecha_de_creación { get; set; } // Mapea a fecha_de_creación
+
+        //Propiedades de navegacion
+        public ICollection<Dispositivosdev> Dispositivos { get; set; } = new List<Dispositivosdev>();
+
     }
 }

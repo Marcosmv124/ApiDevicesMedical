@@ -83,8 +83,8 @@ namespace AppDevicesMedical.Controllers
 
             // Corregido: Asumiendo que 'Capacidad_personas' es el campo a validar como positivo
             // Si necesitas validar otro campo como 'Capacidad_produccion', ajústalo aquí.
-            if (createDto.Capacidad_personas == null || createDto.Capacidad_personas <= 0)
-                return BadRequest("La capacidad de personas debe ser un número positivo.");
+            //if (createDto.Capacidad_personas == null || createDto.Capacidad_personas <= 0)
+            //    return BadRequest("La capacidad de personas debe ser un número positivo.");
 
             // Corregido: Usar 'Nombre_cuarto' del DTO para validar unicidad
             var existeNombre = await _context.Cuarto.AnyAsync(c => c.Nombre_cuarto == createDto.Nombre_cuarto);
@@ -127,8 +127,8 @@ namespace AppDevicesMedical.Controllers
                 return BadRequest("El nombre del cuarto no puede estar vacío.");
 
             // Corregido: Asumiendo que 'Capacidad_personas' es el campo a validar como positivo
-            if (updateDto.Capacidad_personas == null || updateDto.Capacidad_personas <= 0)
-                return BadRequest("La capacidad de personas debe ser un número positivo.");
+            //if (updateDto.Capacidad_personas == null || updateDto.Capacidad_personas <= 0)
+            //    return BadRequest("La capacidad de personas debe ser un número positivo.");
             // -------------------------------------------------------------
 
             try

@@ -81,5 +81,9 @@ namespace AppDevicesMedical.Models
         public string? Documento_estandar_ref { get; set; }
 
         public string? Notas_adicionales { get; set; }
+
+        //propiedades de navegacion
+        public ICollection<Dispositivosdev> Dispositivos { get; set; } = new List<Dispositivosdev>();
+
     }
 }
