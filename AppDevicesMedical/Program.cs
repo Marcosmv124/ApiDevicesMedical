@@ -1,17 +1,24 @@
-﻿using AppDevicesMedical.Models;
+﻿using AppDevicesMedical;
+using AppDevicesMedical.Authorization;
+using AppDevicesMedical.Models;
 using AppDevicesMedical.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Scalar.AspNetCore;
 using System.Text;
-using Microsoft.AspNetCore.Authorization;
-using AppDevicesMedical.Authorization;
-using AppDevicesMedical;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
+// POR ESTO:
+builder.Services.AddControllers()
+    .AddJsonOptions(x =>
+    {
+        // Esto evita que tu API explote si hay relaciones padre-hijo circulares
+        x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    });
 
 // ✅ Configuración CORS
 builder.Services.AddCors(options =>

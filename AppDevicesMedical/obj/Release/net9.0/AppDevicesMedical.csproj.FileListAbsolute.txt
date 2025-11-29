@@ -264,6 +264,7 @@ C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\AppDevicesMedical.csproj.CoreCompileInputs.cache
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\AppDevicesMedical.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\AppDevicesMedical.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\AppDevicesMedical.sourcelink.json
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\rjimswa.dswa.cache.json
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\rjsmcshtml.dswa.cache.json
@@ -279,4 +280,3 @@ C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\AppDevicesMedical.pdb
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\AppDevicesMedical.genruntimeconfig.cache
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\ref\AppDevicesMedical.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\AppDevicesMedical.sourcelink.json

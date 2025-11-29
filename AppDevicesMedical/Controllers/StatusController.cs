@@ -84,6 +84,7 @@ namespace AppDevicesMedical.Controllers
         public async Task<ActionResult<Status>> PostStatus(Status status)
         {
             _context.Status.Add(status);
+
             try
             {
                 await _context.SaveChangesAsync();
@@ -92,14 +93,23 @@ namespace AppDevicesMedical.Controllers
             {
                 if (StatusExists(status.Id_status))
                 {
+                    //Error de ID duplicado (Duplicidad de Clave Primaria)
+                    // Devuelve un 409 Conflict. ActionResult.Conflict() devuelve un 409 vacío.
                     return Conflict();
                 }
                 else
                 {
-                    throw;
+                    //Otro Error de Base de Datos (ej. Violación de unicidad en otro campo)
+                    // Devuelve un 400 Bad Request o un 500 Internal Server Error, dependiendo de tu política.
+                    // Usaremos 400 ya que generalmente es causado por datos inválidos del cliente.
+                    return BadRequest(); // Devuelve un 400 vacío.
+
+                    // Si prefieres indicar un fallo interno y no saber la causa específica:
+                    // return StatusCode(StatusCodes.Status500InternalServerError); // Devuelve un 500 vacío.
                 }
             }
 
+            //Éxito: Devuelve 201 Created
             return CreatedAtAction("GetStatus", new { id = status.Id_status }, status);
         }
 

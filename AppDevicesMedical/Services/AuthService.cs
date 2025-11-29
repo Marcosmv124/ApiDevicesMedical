@@ -15,6 +15,25 @@ namespace AppDevicesMedical.Services
         {
             return await context.Usuarios.FindAsync(id);
         }
+        public async Task<UserProfileDto?> GetLoggedUserAsync(int userId)
+        {
+            var usuario = await context.Usuarios
+                .Include(u => u.Rol) // Incluimos el rol para mostrar el nombre
+                .FirstOrDefaultAsync(u => u.IdUsuario == userId);
+
+            if (usuario is null) return null;
+
+            // Mapeamos a DTO para seguridad
+            return new UserProfileDto
+            {
+                IdUsuario = usuario.IdUsuario,
+                NumeroEmpleado = usuario.NumeroEmpleado,
+                Nombres = usuario.Nombres,
+                ApellidoPaterno = usuario.ApellidoPaterno,
+                ApellidoMaterno = usuario.ApellidoMaterno,
+                NombreRol = usuario.Rol?.Nombre_rol ?? "Sin Rol"
+            };
+        }
 
         public async Task<List<Usuario>> GetAllAsync()
         {
@@ -27,23 +46,26 @@ namespace AppDevicesMedical.Services
                 .Include(u => u.Rol)
                 .FirstOrDefaultAsync(u => u.NumeroEmpleado == request.NumeroEmpleado);
 
+            // Si el usuario no existe
             if (usuario is null)
-                return null;
+                return "Empleado no encontrado";  // Detalles de error específicos
 
+            // Verificar la contraseña
             if (new PasswordHasher<Usuario>().VerifyHashedPassword(usuario, usuario.PasswordHash, request.Password)
                 == PasswordVerificationResult.Failed)
-                return null;
+                return "Contraseña incorrecta";  // Detalles de error específicos
 
-            // 🔑 Obtener permisos del rol
+            // Obtener permisos del rol
             var permisos = await context.RolPermisos
                 .Where(rp => rp.IdRol == usuario.IdRol)
                 .Select(rp => rp.Permiso.Nombre)
                 .ToListAsync();
 
+            // Generar el token JWT
             return CrearToken(usuario, permisos);
         }
 
-        public async Task<Usuario?> RegisterAsync(UsuarioDto request)
+        public async Task<Usuario?> RegisterAsync(RegisterDto request)
         {
             if (await context.Usuarios.AnyAsync(u => u.NumeroEmpleado == request.NumeroEmpleado))
                 return null;
@@ -97,17 +119,20 @@ namespace AppDevicesMedical.Services
             await context.SaveChangesAsync();
             return true;
         }
-
         public string CrearToken(Usuario usuario, List<string> permisos)
         {
             string nombreRol = usuario.Rol?.Nombre_rol ?? "SinRol";
 
             var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, usuario.NumeroEmpleado),
-                new Claim(ClaimTypes.NameIdentifier, usuario.IdUsuario.ToString()),
-                new Claim(ClaimTypes.Role, nombreRol),
-                new Claim("IdRolDB", usuario.IdRol.ToString())
+          {
+              // Incluir el Nombre del usuario
+               new Claim(ClaimTypes.Name, usuario.NumeroEmpleado), // NumeroEmpleado como el nombre de usuario
+                new Claim(ClaimTypes.NameIdentifier, usuario.IdUsuario.ToString()), // IdUsuario
+                 new Claim(ClaimTypes.Role, nombreRol), // Rol del usuario
+                   new Claim("IdRolDB", usuario.IdRol.ToString()), // IdRol de la base de datos
+        
+                  // Incluir el Nombre completo del usuario
+                      new Claim("Nombre", usuario.Nombres)  // Agregar el Nombre completo aquí
             };
 
             // ✅ Agregar permisos como claims
@@ -133,3 +158,82 @@ namespace AppDevicesMedical.Services
         }
     }
 }
+//public string CrearToken(Usuario usuario, List<string> permisos)
+//{
+//    string nombreRol = usuario.Rol?.Nombre_rol ?? "SinRol";
+
+//    var claims = new List<Claim>
+//    {
+//        new Claim(ClaimTypes.Name, usuario.NumeroEmpleado),
+//        new Claim(ClaimTypes.NameIdentifier, usuario.IdUsuario.ToString()),
+//        new Claim(ClaimTypes.Role, nombreRol),
+//        new Claim("IdRolDB", usuario.IdRol.ToString())
+//    };
+
+//    // ✅ Agregar permisos como claims
+//    foreach (var permiso in permisos)
+//    {
+//        claims.Add(new Claim("Permiso", permiso));
+//    }
+
+//    var key = new SymmetricSecurityKey(
+//        Encoding.UTF8.GetBytes(configuration.GetValue<string>("AppSettings:Token")!));
+
+//    var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512);
+
+//    var tokenDescriptor = new JwtSecurityToken(
+//        issuer: configuration["AppSettings:Issuer"],
+//        audience: configuration["AppSettings:Audience"],
+//        claims: claims,
+//        expires: DateTime.UtcNow.AddHours(2),
+//        signingCredentials: creds
+//    );
+
+//    return new JwtSecurityTokenHandler().WriteToken(tokenDescriptor);
+//}
+
+//public async Task<Usuario?> RegisterAsync(RegisterDto request)
+//{
+//    Validar si ya existe el número de empleado
+//    if (await context.Usuarios.AnyAsync(u => u.NumeroEmpleado == request.NumeroEmpleado))
+//        return null;
+
+//    var usuario = new Usuario
+//    {
+//        Nombres = request.Nombres,
+//        ApellidoPaterno = request.ApellidoPaterno,
+//        ApellidoMaterno = request.ApellidoMaterno,
+//        NumeroEmpleado = request.NumeroEmpleado,
+//        FechaCreacion = DateTime.UtcNow,
+
+//        ---AQUÍ CREAMOS LAS DEPENDENCIAS AL VUELO-- -
+//         Al instanciar "new Rol",
+//        EF Core insertará primero el rol en la BD
+//         y usará ese nuevo ID para el usuario.
+
+//        Rol = new Rol
+//        {
+//            Nombre_rol = "Super Admin" // <--- Aquí definimos el nombre exacto
+//        },
+
+//        StatusUsuario = new Status
+//        {
+//             Revisa si en tu clase Status la propiedad se llama 'Nombre' o 'Descripcion'
+//            Nombre_status = "Activo"
+//        },
+
+//        Especialidad = new Especialidad
+//        {
+//            Nom_Especialidad = "Sistemas"
+//        }
+//    };
+
+//    Encriptar contraseña
+//var passwordHasher = new PasswordHasher<Usuario>();
+//    usuario.PasswordHash = passwordHasher.HashPassword(usuario, request.Password);
+
+//    context.Usuarios.Add(usuario);
+//    await context.SaveChangesAsync(); // Esto guarda Rol, Status, Especialidad y Usuario en una sola transacción.
+
+//    return usuario;
+//}

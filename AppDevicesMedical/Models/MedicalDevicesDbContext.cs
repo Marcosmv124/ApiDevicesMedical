@@ -1,5 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using AppDevicesMedical.Models;
+﻿using AppDevicesMedical.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
 
 namespace AppDevicesMedical.Models
 {
@@ -21,6 +22,17 @@ namespace AppDevicesMedical.Models
         public DbSet<Examen> Examenes { get; set; }
         public DbSet<TipoDispositivo> TipoDispositivos { get; set; }
         public DbSet<ClaseRiesgo> ClaseRiesgo { get; set; }
+        public DbSet<Transferencia> Transferencias { get; set; }  
+        public DbSet<TransferenciaEstandar> TransferenciaEstandares { get; set; } 
+
+        public DbSet<SistemaCalidad> SistemasCalidad { get; set; }
+        public DbSet<BusinessCase> BusinessCases { get; set; }
+        // 👇 ¡AGREGA ESTO! 👇
+        public DbSet<MetodoEsterilizacion> MetodosEsterilizacion { get; set; }
+
+        // ╔══════════════════════════════════════════╗
+        // ║         CONFIGURACIÓN DE TRANSFERENCIAS  ║
+        // ╚══════════════════════════════════════════╝
 
         // ╔══════════════════════════════════════════╗
         // ║         CONFIGURACIÓN DE PERMISOS        ║
@@ -31,6 +43,28 @@ namespace AppDevicesMedical.Models
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            // ╔══════════════════════════════════════════╗
+            // ║         CONFIGURACIÓN DE TRANSFERENCIAS  ║
+            // ╚══════════════════════════════════════════╝
+            // Configuración Many-to-Many para Estándares
+               builder.Entity<TransferenciaEstandar>()
+                .HasKey(te => new { te.IdTransferencia, te.IdEstandar });
+
+            builder.Entity<TransferenciaEstandar>()
+                .HasOne(te => te.Transferencia)
+                .WithMany(t => t.TransferenciaEstandares)
+                .HasForeignKey(te => te.IdTransferencia);
+
+            builder.Entity<TransferenciaEstandar>()
+                .HasOne(te => te.Estandar)
+                .WithMany(e => e.TransferenciaEstandares)
+                .HasForeignKey(te => te.IdEstandar);
+
+            // Configuración 1:1 Business Case
+            builder.Entity<Transferencia>()
+                .HasOne(t => t.BusinessCase)
+                .WithOne(b => b.Transferencia)
+                .HasForeignKey<BusinessCase>(b => b.IdTransferencia);
 
             // Configuración de unicidad en Usuario
             builder.Entity<Usuario>()

@@ -24,11 +24,11 @@ namespace AppDevicesMedical.DTOs
         public string? NombreRol { get; set; }
 
         // Status
-        public int IdStatus { get; set; }   // ⚠️ mejor no nullable si en BD es NOT NULL
+        public int IdStatus { get; set; }   //mejor no nullable si en BD es NOT NULL
         public string? DescripcionStatus { get; set; }
 
         // Especialidad
-        public int IdEspecialidad { get; set; }   // ⚠️ mejor no nullable si en BD es NOT NULL
+        public int IdEspecialidad { get; set; }   //mejor no nullable si en BD es NOT NULL
         public string? NombreEspecialidad { get; set; }
     }
 }

@@ -28,6 +28,9 @@ namespace AppDevicesMedical.Models
 
         [StringLength(100)]
         public string? Metodo_esterilizacion_req { get; set; } // VARCHAR, NULLABLE (NUEVO)
+        
+        // ✅ ESTE ES EL CAMPO NUEVO (La columna INT que acabas de crear en SQL)
+        public int? IdMetodoEsterilizacion { get; set; }
 
         [Required]
         [StringLength(50)]
@@ -48,5 +51,8 @@ namespace AppDevicesMedical.Models
 
         [ForeignKey("Id_cuarto_requerido")]
         public virtual Cuarto? CuartoRequerido { get; set; }
+      
+        //[ForeignKey("IdMetodoEsterilizacion")]
+        //public virtual MetodoEsterilizacion MetodoEsterilizacion { get; set; }
     }
 }

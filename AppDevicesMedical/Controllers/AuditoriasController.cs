@@ -1,11 +1,12 @@
-﻿using System;
+﻿using AppDevicesMedical.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using AppDevicesMedical.Models;
 
 namespace AppDevicesMedical.Controllers
 {
@@ -22,14 +23,27 @@ namespace AppDevicesMedical.Controllers
 
         // GET: api/Auditorias
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Auditoria>>> GetAuditoria()
+        public IAsyncEnumerable<Auditoria> GetAuditoria(int maxRecords = 1000)
         {
-            return await _context.Auditoria.ToListAsync();
+            _context.Database.SetCommandTimeout(180); // 3 minutos
+
+            // Consulta SQL directamente
+            string sqlQuery = @"
+            SELECT * FROM Auditoria
+            ORDER BY Timestamp DESC
+            LIMIT @maxRecords;";
+
+            // Ejecutar la consulta SQL y mapear los resultados a Auditoria
+            return _context.Auditoria
+                .FromSqlRaw(sqlQuery, new SqlParameter("@maxRecords", maxRecords))
+                .AsNoTracking()
+                .AsAsyncEnumerable();
         }
+
 
         // GET: api/Auditorias/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Auditoria>> GetAuditoria(int id)
+        public async Task<ActionResult<Auditoria>> GetAuditoriaById(int id)
         {
             var auditoria = await _context.Auditoria.FindAsync(id);
 

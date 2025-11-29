@@ -292,7 +292,39 @@ namespace AppDevicesMedical.Controllers
         {
             return _context.Rol.Any(e => e.Id_rol == id);
         }
+
+        // POST: api/Rols/{idRol}/permisos/todos
+        [HttpPost("{idRol}/permisos/todos")]
+        public async Task<IActionResult> AsignarTodosLosPermisosARol(int idRol)
+        {
+            var rol = await _context.Rol.FindAsync(idRol);
+            if (rol == null)
+                return NotFound($"No se encontró el rol con ID {idRol}.");
+
+            // Selecciona todos los permisos que aún no están asignados
+            var permisosNoAsignados = await _context.Permisos
+                .Where(p => !_context.RolPermisos
+                    .Any(rp => rp.IdRol == idRol && rp.IdPermiso == p.IdPermiso))
+                .ToListAsync();
+
+            if (!permisosNoAsignados.Any())
+                return Ok("El rol ya tiene todos los permisos asignados.");
+
+            foreach (var permiso in permisosNoAsignados)
+            {
+                _context.RolPermisos.Add(new RolPermiso
+                {
+                    IdRol = idRol,
+                    IdPermiso = permiso.IdPermiso
+                });
+            }
+
+            await _context.SaveChangesAsync();
+
+            return Ok($"Se asignaron {permisosNoAsignados.Count} permisos al rol '{rol.Nombre_rol}'.");
+        }
     }
+
 }
 
 //// PUT: api/Rols/{idRol}/permisos
@@ -396,7 +428,6 @@ namespace AppDevicesMedical.Controllers
 //    return await _context.Permisos.ToListAsync();
 //}
 //// POST: api/Rols/{idRol}/permisos/todos
-//[Permiso("GESTIONAR_PERMISOS")]
 //[HttpPost("{idRol}/permisos/todos")]
 //public async Task<IActionResult> AsignarTodosLosPermisosARol(int idRol)
 //{

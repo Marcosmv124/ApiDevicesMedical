@@ -11,8 +11,8 @@ namespace AppDevicesMedical.Controllers
     public class DispositivosController : Controller
     {
         private readonly MedicalDevicesDbContext _context;
-        
-        
+
+
         public DispositivosController(MedicalDevicesDbContext context)
         {
             _context = context;
@@ -66,7 +66,7 @@ namespace AppDevicesMedical.Controllers
                     dispositivo.Estado_regulatorio,
                     dispositivo.Fecha_registro,
 
-                    CategoriaNombre = dispositivo.Categoria?.Nombre_Categoria, 
+                    CategoriaNombre = dispositivo.Categoria?.Nombre_Categoria,
                     ClaseRiesgoNombre = dispositivo.ClaseRiesgo?.Nombre_clase,
                     TipoDispositivoNombre = dispositivo.TipoDispositivo?.Nombre_tipo,
                     CuartoNombre = dispositivo.CuartoRequerido?.Nombre_cuarto
