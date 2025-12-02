@@ -6,13 +6,7 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "maxRecords",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IAsyncEnumerable\u00601[[AppDevicesMedical.Models.Auditoria, AppDevicesMedical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -76,43 +70,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "AppDevicesMedical.Controllers.AuditoriasController",
-    "Method": "PutAuditoria",
-    "RelativePath": "api/Auditorias/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "auditoria",
-        "Type": "AppDevicesMedical.Models.Auditoria",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AppDevicesMedical.Controllers.AuditoriasController",
-    "Method": "DeleteAuditoria",
-    "RelativePath": "api/Auditorias/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "AppDevicesMedical.Controllers.AuthController",
@@ -268,6 +225,16 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.CatalogosController",
+    "Method": "GetSistemasCalidad",
+    "RelativePath": "api/Catalogos/sistemas-calidad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "AppDevicesMedical.Controllers.CategoriasController",
@@ -802,6 +769,115 @@
     "ContainingType": "AppDevicesMedical.Controllers.EspecialidadesController",
     "Method": "DeleteEspecialidad",
     "RelativePath": "api/Especialidades/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.EstandaresController",
+    "Method": "GetEstandar",
+    "RelativePath": "api/Estandares",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AppDevicesMedical.Models.Estandar, AppDevicesMedical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.EstandaresController",
+    "Method": "PostEstandar",
+    "RelativePath": "api/Estandares",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estandar",
+        "Type": "AppDevicesMedical.Models.Estandar",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AppDevicesMedical.Models.Estandar",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.EstandaresController",
+    "Method": "GetEstandar",
+    "RelativePath": "api/Estandares/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AppDevicesMedical.Models.Estandar",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.EstandaresController",
+    "Method": "PutEstandar",
+    "RelativePath": "api/Estandares/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "estandar",
+        "Type": "AppDevicesMedical.Models.Estandar",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppDevicesMedical.Controllers.EstandaresController",
+    "Method": "DeleteEstandar",
+    "RelativePath": "api/Estandares/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

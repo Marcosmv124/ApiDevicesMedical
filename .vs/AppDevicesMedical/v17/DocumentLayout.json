@@ -3,36 +3,212 @@
   "WorkspaceRootPath": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\rolscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\controllers\\rolscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\auditoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\controllers\\auditoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\dispositivoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\controllers\\dispositivoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\permisoroldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\permisoroldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\rolpermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\rolpermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\dispositivocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\dispositivocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\medicaldevicesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\medicaldevicesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\cuartodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\cuartodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\guardarrolconpermisosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\guardarrolconpermisosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\createcuartodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\createcuartodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\claseriesgocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\claseriesgocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\asignarpermisosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\asignarpermisosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\medicaldevicesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\medicaldevicesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\transferenciascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\controllers\\transferenciascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\appdevicesmedical.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\appdevicesmedical.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\claseriesgo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\claseriesgo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\transferencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\transferencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\dispositivoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\controllers\\dispositivoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\transferenciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\transferenciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\transferenciareportedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\transferenciareportedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\appdevicesmedical.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\appdevicesmedical.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\catalogoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\controllers\\catalogoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\cuartoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\controllers\\cuartoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\estandar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\estandar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\tipodispositivocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\controllers\\tipodispositivocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\estandarescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\controllers\\estandarescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\transferenciadetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\transferenciadetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\especialidadescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\controllers\\especialidadescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\authorization\\permisorequeridohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\authorization\\permisorequeridohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\dipositivosdev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\dipositivosdev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\authorization\\permisoattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\authorization\\permisoattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\controllers\\rolscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\controllers\\rolscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\authorization\\permisorequerido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\authorization\\permisorequerido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\authorization\\permisopolicyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\authorization\\permisopolicyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\sistemacalidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\sistemacalidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\guardarrolconpermisosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\guardarrolconpermisosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\cuarto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\cuarto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\metodoesterilizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\metodoesterilizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\metodoesterilizaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\metodoesterilizaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\businesscase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\businesscase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\transferenciaestandar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\transferenciaestandar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\tipodispositivodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\tipodispositivodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\dispositivoregistrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\dispositivoregistrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\rolpermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\rolpermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\dtos\\permisoroldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\dtos\\permisoroldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +217,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\models\\tipodispositivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\models\\tipodispositivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|c:\\users\\marco\\onedrive\\desktop\\appdevicesmedical\\appdevicesmedical\\authorization\\permisoattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369F4266-B052-44FB-ADE9-2929B42CD413}|AppDevicesMedical\\AppDevicesMedical.csproj|solutionrelative:appdevicesmedical\\authorization\\permisoattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,60 +226,635 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RolsController.cs",
-              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\RolsController.cs",
-              "RelativeDocumentMoniker": "AppDevicesMedical\\Controllers\\RolsController.cs",
-              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\RolsController.cs",
-              "RelativeToolTip": "AppDevicesMedical\\Controllers\\RolsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4BAAARAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAIwIQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T22:17:11.803Z",
+              "WhenOpened": "2025-11-22T06:55:59.406Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GuardarRolConPermisosDto.cs",
-              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\GuardarRolConPermisosDto.cs",
-              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\GuardarRolConPermisosDto.cs",
-              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\GuardarRolConPermisosDto.cs",
-              "RelativeToolTip": "AppDevicesMedical\\DTOs\\GuardarRolConPermisosDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "CuartoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\CuartoDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\CuartoDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\CuartoDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\CuartoDto.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAAB8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T05:13:23.074Z"
+              "WhenOpened": "2025-12-02T04:41:25.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateCuartoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\CreateCuartoDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\CreateCuartoDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\CreateCuartoDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\CreateCuartoDto.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAGMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T04:30:33.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DispositivoCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\DispositivoCreateDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\DispositivoCreateDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\DispositivoCreateDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\DispositivoCreateDto.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:10:45.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\UserProfileDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\UserProfileDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\UserProfileDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\UserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T02:02:23.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsuarioDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\UsuarioDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\UsuarioDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\UsuarioDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\UsuarioDto.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:56:28.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StatusController.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\StatusController.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Controllers\\StatusController.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\StatusController.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Controllers\\StatusController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T05:44:21.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Program.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Program.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Program.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Program.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAG8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T00:57:13.946Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\appsettings.json",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\appsettings.json",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\appsettings.json",
+              "RelativeToolTip": "AppDevicesMedical\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-28T22:32:07.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuditoriasController.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\AuditoriasController.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Controllers\\AuditoriasController.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\AuditoriasController.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Controllers\\AuditoriasController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAABYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:42:48.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClaseRiesgoCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\ClaseRiesgoCreateDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\ClaseRiesgoCreateDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\ClaseRiesgoCreateDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\ClaseRiesgoCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T04:41:11.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Status.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\Status.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Status.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Models\\Status.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T04:39:19.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TransferenciasController.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\TransferenciasController.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Controllers\\TransferenciasController.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\TransferenciasController.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Controllers\\TransferenciasController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAFsBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T10:46:13.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppDevicesMedical",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\AppDevicesMedical.csproj",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\AppDevicesMedical.csproj",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\AppDevicesMedical.csproj",
+              "RelativeToolTip": "AppDevicesMedical\\AppDevicesMedical.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-02T04:32:44.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ClaseRiesgo.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\ClaseRiesgo.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\ClaseRiesgo.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\ClaseRiesgo.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Models\\ClaseRiesgo.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T04:30:36.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Services\\AuthService.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Services\\AuthService.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T05:43:33.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:56:15.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Usuario.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Models\\Usuario.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAuwDkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T06:18:34.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "AsignarPermisosDto.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\AsignarPermisosDto.cs",
               "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\AsignarPermisosDto.cs",
               "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\AsignarPermisosDto.cs",
               "RelativeToolTip": "AppDevicesMedical\\DTOs\\AsignarPermisosDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T00:06:05.828Z"
+              "WhenOpened": "2025-11-20T00:06:05.828Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 20,
+              "Title": "Transferencia.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Transferencia.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\Transferencia.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Transferencia.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Models\\Transferencia.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T10:27:02.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DispositivosController.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\DispositivosController.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Controllers\\DispositivosController.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\DispositivosController.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Controllers\\DispositivosController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T21:12:16.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MedicalDevicesDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\MedicalDevicesDbContext.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\MedicalDevicesDbContext.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\MedicalDevicesDbContext.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Models\\MedicalDevicesDbContext.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwCIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T21:17:50.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TransferenciaDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\TransferenciaDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\TransferenciaDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\TransferenciaDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\TransferenciaDto.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAcwDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T18:36:47.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TransferenciaReporteDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\TransferenciaReporteDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\TransferenciaReporteDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\TransferenciaReporteDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\TransferenciaReporteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T02:19:43.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AppDevicesMedical.csproj",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\AppDevicesMedical.csproj",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\AppDevicesMedical.csproj",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\AppDevicesMedical.csproj",
+              "RelativeToolTip": "AppDevicesMedical\\AppDevicesMedical.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-22T05:45:10.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CatalogosController.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\CatalogosController.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Controllers\\CatalogosController.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\CatalogosController.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Controllers\\CatalogosController.cs",
+              "ViewState": "AgIAABcAAAAgAQAAAAAqwCkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T03:40:32.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CuartosController.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\CuartosController.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Controllers\\CuartosController.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\CuartosController.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Controllers\\CuartosController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T05:55:19.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Estandar.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Estandar.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\Estandar.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Estandar.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Models\\Estandar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T10:30:15.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TipoDispositivoController.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\TipoDispositivoController.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Controllers\\TipoDispositivoController.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\TipoDispositivoController.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Controllers\\TipoDispositivoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T02:45:39.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TransferenciaDetalleDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\TransferenciaDetalleDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\TransferenciaDetalleDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\TransferenciaDetalleDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\TransferenciaDetalleDto.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAADQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T06:35:30.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EstandaresController.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\EstandaresController.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Controllers\\EstandaresController.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\EstandaresController.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Controllers\\EstandaresController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAACYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T01:46:45.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EspecialidadesController.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\EspecialidadesController.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Controllers\\EspecialidadesController.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\EspecialidadesController.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Controllers\\EspecialidadesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T02:10:12.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PermisoRequeridoHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Authorization\\PermisoRequeridoHandler.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Authorization\\PermisoRequeridoHandler.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Authorization\\PermisoRequeridoHandler.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Authorization\\PermisoRequeridoHandler.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAADEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T01:04:39.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PermisoAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Authorization\\PermisoAttribute.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Authorization\\PermisoAttribute.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Authorization\\PermisoAttribute.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Authorization\\PermisoAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T21:11:53.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RolsController.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\RolsController.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Controllers\\RolsController.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\RolsController.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Controllers\\RolsController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwEUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T22:17:11.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Dipositivosdev.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Dipositivosdev.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\Dipositivosdev.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Dipositivosdev.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Models\\Dipositivosdev.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:09:57.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PermisoRequerido.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Authorization\\PermisoRequerido.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Authorization\\PermisoRequerido.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Authorization\\PermisoRequerido.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Authorization\\PermisoRequerido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T01:04:38.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "PermisoPolicyProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Authorization\\PermisoPolicyProvider.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Authorization\\PermisoPolicyProvider.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Authorization\\PermisoPolicyProvider.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Authorization\\PermisoPolicyProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T01:04:35.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "SistemaCalidad.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\SistemaCalidad.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\SistemaCalidad.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\SistemaCalidad.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Models\\SistemaCalidad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T10:29:31.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
               "Title": "Cuarto.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Cuarto.cs",
               "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\Cuarto.cs",
               "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Cuarto.cs",
               "RelativeToolTip": "AppDevicesMedical\\Models\\Cuarto.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAAFcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-19T21:29:50.245Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 39,
+              "Title": "GuardarRolConPermisosDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\GuardarRolConPermisosDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\GuardarRolConPermisosDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\GuardarRolConPermisosDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\GuardarRolConPermisosDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADgvwYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T05:13:23.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "MetodoEsterilizacion.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\MetodoEsterilizacion.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\MetodoEsterilizacion.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\MetodoEsterilizacion.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Models\\MetodoEsterilizacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T03:20:41.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "MetodoEsterilizacionDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\MetodoEsterilizacionDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\MetodoEsterilizacionDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\MetodoEsterilizacionDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\MetodoEsterilizacionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T03:22:33.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "BusinessCase.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\BusinessCase.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\BusinessCase.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\BusinessCase.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Models\\BusinessCase.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T10:28:12.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "TransferenciaEstandar.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\TransferenciaEstandar.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\TransferenciaEstandar.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\TransferenciaEstandar.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Models\\TransferenciaEstandar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T10:30:46.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "TipoDispositivoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\TipoDispositivoDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\TipoDispositivoDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\TipoDispositivoDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\TipoDispositivoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T20:01:30.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Services\\IAuthService.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T06:23:54.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T06:03:25.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Rol.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Rol.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\Rol.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Rol.cs",
+              "RelativeToolTip": "AppDevicesMedical\\Models\\Rol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T06:11:24.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "DispositivoRegistroDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\DispositivoRegistroDto.cs",
+              "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\DispositivoRegistroDto.cs",
+              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\DispositivoRegistroDto.cs",
+              "RelativeToolTip": "AppDevicesMedical\\DTOs\\DispositivoRegistroDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:22:15.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\Categoria.cs",
               "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\Categoria.cs",
@@ -119,19 +866,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MedicalDevicesDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\MedicalDevicesDbContext.cs",
-              "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\MedicalDevicesDbContext.cs",
-              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\MedicalDevicesDbContext.cs",
-              "RelativeToolTip": "AppDevicesMedical\\Models\\MedicalDevicesDbContext.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAFQAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T21:17:50.934Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 50,
               "Title": "RolPermiso.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\RolPermiso.cs",
               "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\RolPermiso.cs",
@@ -143,19 +878,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DispositivosController.cs",
-              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\DispositivosController.cs",
-              "RelativeDocumentMoniker": "AppDevicesMedical\\Controllers\\DispositivosController.cs",
-              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Controllers\\DispositivosController.cs",
-              "RelativeToolTip": "AppDevicesMedical\\Controllers\\DispositivosController.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAAAKwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T21:12:16.144Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 51,
               "Title": "PermisoRolDto.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\DTOs\\PermisoRolDto.cs",
               "RelativeDocumentMoniker": "AppDevicesMedical\\DTOs\\PermisoRolDto.cs",
@@ -167,7 +890,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 53,
               "Title": "TipoDispositivo.cs",
               "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Models\\TipoDispositivo.cs",
               "RelativeDocumentMoniker": "AppDevicesMedical\\Models\\TipoDispositivo.cs",
@@ -176,18 +899,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-19T21:12:00.982Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PermisoAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Authorization\\PermisoAttribute.cs",
-              "RelativeDocumentMoniker": "AppDevicesMedical\\Authorization\\PermisoAttribute.cs",
-              "ToolTip": "C:\\Users\\Marco\\OneDrive\\Desktop\\AppDevicesMedical\\AppDevicesMedical\\Authorization\\PermisoAttribute.cs",
-              "RelativeToolTip": "AppDevicesMedical\\Authorization\\PermisoAttribute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T21:11:53.352Z"
             }
           ]
         }

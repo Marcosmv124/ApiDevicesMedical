@@ -14,7 +14,7 @@ namespace AppDevicesMedical.DTOs
         public int? Id_tipo_dispositivo { get; set; }
         public int? Id_cuarto_requerido { get; set; }
 
-        // 👇 CAMBIO 1: Agregamos el ID del método (Esto es lo que el Front envía al guardar)
+        // CAMBIO 1: Agregamos el ID del método (Esto es lo que el Front envía al guardar)
        // public int? IdMetodoEsterilizacion { get; set; }
 
         public bool Es_invasivo { get; set; } = false;

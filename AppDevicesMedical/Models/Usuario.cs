@@ -51,6 +51,12 @@ namespace AppDevicesMedical.Models
         [Required]
         public DateTime FechaCreacion { get; set; }
 
+        [Column("intentos_fallidos")]
+        public int IntentosFallidos { get; set; }
+
+        [Column("bloqueo_hasta")]
+        public DateTime? BloqueoHasta { get; set; }
+
         // Propiedades de navegación
         public Rol Rol { get; set; }
         public Status StatusUsuario { get; set; }

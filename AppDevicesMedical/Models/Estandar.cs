@@ -14,6 +14,6 @@ namespace AppDevicesMedical.Models
         [StringLength(100)]
         public string TipoEstandar { get; set; }
 
-        public virtual ICollection<TransferenciaEstandar> TransferenciaEstandares { get; set; }
+        public virtual ICollection<TransferenciaEstandar>? TransferenciaEstandares { get; set; }
     }
 }

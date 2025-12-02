@@ -1,4 +1,5 @@
-﻿using AppDevicesMedical.DTOs;
+﻿using AppDevicesMedical.Authorization;
+using AppDevicesMedical.DTOs;
 using AppDevicesMedical.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -21,6 +22,8 @@ namespace AppDevicesMedical.Controllers
 
         // GET: api/Transferencias
         [HttpGet]
+        // POST: api/Rols
+        [Permiso("VER_TRANSFERENCIAS")]
         public async Task<IActionResult> GetTransferencias()
         {
             var transferencias = await _context.Transferencias
@@ -46,6 +49,8 @@ namespace AppDevicesMedical.Controllers
         }
 
         [HttpGet("{id}")]
+        // POST: api/Rols
+        [Permiso("VER_TRANSFERENCIAS")]
         public async Task<ActionResult<TransferenciaDetalleDto>> GetDetalle(int id)
         {
             var transferencia = await _context.Transferencias
@@ -94,7 +99,8 @@ namespace AppDevicesMedical.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        // POST: api/Rols
+        [Permiso("CREAR_TRANSFERENCIAS")]
         public async Task<IActionResult> CreateTransferencia([FromBody] TransferenciaDto dto)
         {
             // 1. Validaciones
@@ -110,6 +116,8 @@ namespace AppDevicesMedical.Controllers
             {
                 IdDispositivo = dto.IdDispositivo,
                 UsuarioResponsable = usuarioNombre,
+                // 👇 AGREGA ESTA LÍNEA AQUÍ PARA FORZAR LA FECHA 👇
+                FechaCreacion = DateTime.Now,
                 Estatus = dto.Estatus,
                 Prioridad = dto.Prioridad,
                 SitioOrigen = dto.SitioOrigen,
@@ -156,7 +164,8 @@ namespace AppDevicesMedical.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize]
+        // POST: api/Rols
+        [Permiso("EDITAR_TRANSFERENCIAS")]
         public async Task<IActionResult> UpdateTransferencia(int id, [FromBody] TransferenciaDto dto)
         {
             // 1. Buscar
@@ -215,7 +224,8 @@ namespace AppDevicesMedical.Controllers
         }
 
         [HttpGet("reporte/{id}")]
-        [Authorize]
+        // POST: api/Rols
+        [Permiso("VER_REPORTE_TRANSFERENCIAS")]
         public async Task<IActionResult> GetReporteTransferencia(int id)
         {
             var transferencia = await _context.Transferencias
@@ -299,7 +309,8 @@ namespace AppDevicesMedical.Controllers
         }
         // DELETE: api/Transferencias/5
         [HttpDelete("{id}")]
-        [Authorize] // Importante: Proteger esto
+        // POST: api/Rols
+        [Permiso("DESACTIVAR_TRANSFERENCIAS")] // Importante: Proteger esto
         public async Task<IActionResult> CancelarTransferencia(int id)
         {
             // 1. Buscamos la transferencia

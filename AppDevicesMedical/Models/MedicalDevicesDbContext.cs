@@ -30,6 +30,10 @@ namespace AppDevicesMedical.Models
         // 👇 ¡AGREGA ESTO! 👇
         public DbSet<MetodoEsterilizacion> MetodosEsterilizacion { get; set; }
 
+        public DbSet<Estandar> Estandares { get; set; }
+
+        public Dbset<PAUL> paules { get; set; }
+
         // ╔══════════════════════════════════════════╗
         // ║         CONFIGURACIÓN DE TRANSFERENCIAS  ║
         // ╚══════════════════════════════════════════╝
@@ -143,5 +147,6 @@ namespace AppDevicesMedical.Models
                 new Rol { Id_rol = 3, Nombre_rol = "Tecnico", Descripcion = "Técnico de dispositivos" }
             );
         }
+       
     }
 }

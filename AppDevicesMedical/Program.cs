@@ -211,6 +211,16 @@ builder.Services.AddAuthorization(options =>
 
     options.AddPolicy("Permiso:ELIMINAR_TIPO_DISPOSITIVO", policy =>
         policy.Requirements.Add(new PermisoRequerido("ELIMINAR_TIPO_DISPOSITIVO")));
+    options.AddPolicy("Permiso:VER_TRANSFERENCIAS", policy =>
+         policy.Requirements.Add(new PermisoRequerido("VER_TRANSFERENCIAS")));
+    options.AddPolicy("Permiso:CREAR_TRANSFERENCIAS", policy =>
+         policy.Requirements.Add(new PermisoRequerido("CREAR_TRANSFERENCIAS")));
+    options.AddPolicy("Permiso:EDITAR_TRANSFERENCIAS", policy =>
+       policy.Requirements.Add(new PermisoRequerido("EDITAR_TRANSFERENCIAS")));
+    options.AddPolicy("Permiso:DESACTIVAR_TRANSFERENCIAS", policy =>
+        policy.Requirements.Add(new PermisoRequerido("DESACTIVAR_TRANSFERENCIAS")));
+    options.AddPolicy("Permiso:VER_REPORTE_TRANSFERENCIAS", policy =>
+        policy.Requirements.Add(new PermisoRequerido("VER_REPORTE_TRANSFERENCIAS")));
 });
 
 // ✅ Servicios de Auth

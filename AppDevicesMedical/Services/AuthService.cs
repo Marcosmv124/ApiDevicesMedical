@@ -40,28 +40,86 @@ namespace AppDevicesMedical.Services
             return await context.Usuarios.ToListAsync();
         }
 
+        //public async Task<string?> LoginAsync(LoginDto request)
+        //{
+        //    var usuario = await context.Usuarios
+        //        .Include(u => u.Rol)
+        //        .FirstOrDefaultAsync(u => u.NumeroEmpleado == request.NumeroEmpleado);
+
+        //    // Si el usuario no existe
+        //    if (usuario is null)
+        //        return "Empleado no encontrado";  // Detalles de error específicos
+
+        //    // Verificar la contraseña
+        //    if (new PasswordHasher<Usuario>().VerifyHashedPassword(usuario, usuario.PasswordHash, request.Password)
+        //        == PasswordVerificationResult.Failed)
+        //        return "Contraseña incorrecta";  // Detalles de error específicos
+
+        //    // Obtener permisos del rol
+        //    var permisos = await context.RolPermisos
+        //        .Where(rp => rp.IdRol == usuario.IdRol)
+        //        .Select(rp => rp.Permiso.Nombre)
+        //        .ToListAsync();
+
+        //    // Generar el token JWT
+        //    return CrearToken(usuario, permisos);
+        //}
         public async Task<string?> LoginAsync(LoginDto request)
         {
             var usuario = await context.Usuarios
                 .Include(u => u.Rol)
                 .FirstOrDefaultAsync(u => u.NumeroEmpleado == request.NumeroEmpleado);
 
-            // Si el usuario no existe
-            if (usuario is null)
-                return "Empleado no encontrado";  // Detalles de error específicos
+            // 1. Validar si existe
+            if (usuario is null) return "Empleado no encontrado";
 
-            // Verificar la contraseña
-            if (new PasswordHasher<Usuario>().VerifyHashedPassword(usuario, usuario.PasswordHash, request.Password)
-                == PasswordVerificationResult.Failed)
-                return "Contraseña incorrecta";  // Detalles de error específicos
+            // 2. VALIDAR BLOQUEO TEMPORAL (Los 5 minutos)
+            if (usuario.BloqueoHasta.HasValue && usuario.BloqueoHasta > DateTime.Now)
+            {
+                var segundosRestantes = (int)(usuario.BloqueoHasta.Value - DateTime.Now).TotalSeconds;
+                return $"Usuario bloqueado temporalmente. Espera {segundosRestantes/60} Minutos.";
+            }
 
-            // Obtener permisos del rol
+            // 3. VALIDAR STATUS BLOQUEADO (Desde BD, ej: Baja o Suspendido)
+            // Asumiendo que IdStatus != 1 significa que NO está activo
+            if (usuario.IdStatus != 0/*STATUS 0 es el activo*/)
+            {
+                return "Tu cuenta está desactivada o dada de baja.";
+            }
+
+            // 4. Verificar Contraseña
+            var verificationResult = new PasswordHasher<Usuario>()
+                .VerifyHashedPassword(usuario, usuario.PasswordHash, request.Password);
+
+            if (verificationResult == PasswordVerificationResult.Failed)
+            {
+                // --- LÓGICA DE BLOQUEO ---
+                usuario.IntentosFallidos++;
+
+                if (usuario.IntentosFallidos >= 3) // A los 3 intentos...
+                {
+                    usuario.BloqueoHasta = DateTime.Now.AddMinutes(5); // Bloqueo 2 min
+                    usuario.IntentosFallidos = 0; // Reiniciamos contador (opcional)
+                }
+
+                await context.SaveChangesAsync(); // Guardamos el fallo en BD
+                return "Contraseña incorrecta";
+            }
+
+            // 5. ÉXITO: Limpiar bloqueos previos si entró bien
+            if (usuario.IntentosFallidos > 0 || usuario.BloqueoHasta != null)
+            {
+                usuario.IntentosFallidos = 0;
+                usuario.BloqueoHasta = null;
+                await context.SaveChangesAsync();
+            }
+
+            // Obtener permisos y generar token
             var permisos = await context.RolPermisos
                 .Where(rp => rp.IdRol == usuario.IdRol)
                 .Select(rp => rp.Permiso.Nombre)
                 .ToListAsync();
 
-            // Generar el token JWT
             return CrearToken(usuario, permisos);
         }
 

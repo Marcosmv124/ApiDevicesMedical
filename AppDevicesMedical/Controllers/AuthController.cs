@@ -39,25 +39,6 @@ namespace AppDevicesMedical.Controllers
             var usuarios = await authService.GetAllAsync();
             return Ok(usuarios);
         }
-        ////[Permiso("Permiso:VER_USUARIO")]
-        //[Permiso("VER_USUARIO")]
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult<Usuario>> GetById(int id)
-        //{
-        //    var usuario = await authService.GetByIdAsync(id);
-        //    if (usuario is null)
-        //        return NotFound($"Usuario con ID {id} no encontrado.");
-
-        //    return Ok(usuario);
-        //}
-
-        //[Permiso("VER_TODOS_USUARIOS")]
-        //[HttpGet("all")]
-        //public async Task<ActionResult<List<Usuario>>> GetAll()
-        //{
-        //    var usuarios = await authService.GetAllAsync();
-        //    return Ok(usuarios);
-        //}
 
         //[Permiso("REGISTRAR_USUARIO")]
         [HttpPost("register")]
@@ -71,20 +52,44 @@ namespace AppDevicesMedical.Controllers
         }
 
 
+        //[HttpPost("login")]
+        //public async Task<ActionResult<string>> Login(LoginDto request)
+        //{
+        //    var errorMessage = await authService.LoginAsync(request);
+
+        //    // Validar el error devuelto y responder con mensajes específicos
+        //    if (errorMessage == "Empleado no encontrado")
+        //        return BadRequest("Número de empleado inválido.");
+
+        //    if (errorMessage == "Contraseña incorrecta")
+        //        return BadRequest("Contraseña incorrecta.");
+
+        //    // Si la autenticación fue exitosa, devolver el token
+        //    return Ok(errorMessage);  // Devuelve el token generado (JWT)
+        //}
         [HttpPost("login")]
         public async Task<ActionResult<string>> Login(LoginDto request)
         {
-            var errorMessage = await authService.LoginAsync(request);
+            var resultado = await authService.LoginAsync(request);
 
-            // Validar el error devuelto y responder con mensajes específicos
-            if (errorMessage == "Empleado no encontrado")
+            // 1. Validaciones básicas
+            if (resultado == "Empleado no encontrado")
                 return BadRequest("Número de empleado inválido.");
 
-            if (errorMessage == "Contraseña incorrecta")
+            if (resultado == "Contraseña incorrecta")
                 return BadRequest("Contraseña incorrecta.");
 
-            // Si la autenticación fue exitosa, devolver el token
-            return Ok(errorMessage);  // Devuelve el token generado (JWT)
+            // 2. NUEVO: Validar si es un mensaje de bloqueo (Temporal o Permanente)
+            // Usamos StartsWith porque el mensaje de tiempo cambia dinámicamente
+            if (resultado.StartsWith("Usuario bloqueado") || resultado.StartsWith("Tu cuenta está"))
+            {
+                // Retornamos 403 Forbidden o 401 Unauthorized
+                // Pasamos el mensaje exacto para que el Frontend se lo muestre al usuario
+                return StatusCode(403, resultado);
+            }
+
+            // 3. Éxito (El resultado es el Token)
+            return Ok(resultado);
         }
 
         [Permiso("EDITAR_USUARIO")]
@@ -105,25 +110,6 @@ namespace AppDevicesMedical.Controllers
 
             return Ok(user);
         }
-
-        //[Permiso("ELIMINAR_USUARIO")]
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> Delete(int id)
-        //{
-        //    var resultado = await authService.DeleteAsync(id);
-
-        //    if (resultado is null)
-        //    {
-        //        return NotFound($"Usuario con ID {id} no encontrado para eliminar.");
-        //    }
-
-        //    if (resultado == false)
-        //    {
-        //        return BadRequest("No se pudo eliminar el usuario.");
-        //    }
-
-        //    return NoContent(); // 204
-        //}
         [Permiso("ELIMINAR_USUARIO")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
@@ -188,3 +174,22 @@ namespace AppDevicesMedical.Controllers
         }
     }
 }
+
+ //[Permiso("ELIMINAR_USUARIO")]
+        //[HttpDelete("{id}")]
+        //public async Task<IActionResult> Delete(int id)
+        //{
+        //    var resultado = await authService.DeleteAsync(id);
+
+        //    if (resultado is null)
+        //    {
+        //        return NotFound($"Usuario con ID {id} no encontrado para eliminar.");
+        //    }
+
+        //    if (resultado == false)
+        //    {
+        //        return BadRequest("No se pudo eliminar el usuario.");
+        //    }
+
+        //    return NoContent(); // 204
+        //}
