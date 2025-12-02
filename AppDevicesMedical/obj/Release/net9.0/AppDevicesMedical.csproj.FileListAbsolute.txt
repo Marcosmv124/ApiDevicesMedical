@@ -10,8 +10,6 @@ C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Azure.Identity.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Humanizer.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.AspNetCore.Razor.Language.dll
@@ -39,18 +37,7 @@ C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.Extensions.Logging.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.Extensions.Options.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.Identity.Client.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\bin\Release\net9.0\Microsoft.IdentityModel.Abstractions.dll
@@ -280,3 +267,4 @@ C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\AppDevicesMedical.pdb
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\AppDevicesMedical.genruntimeconfig.cache
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\ref\AppDevicesMedical.dll
+C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\swae.build.ex.cache

@@ -556,10 +556,10 @@ C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Debug\ne
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Debug\net9.0\AppDevic.A88070F2.Up2Date
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Debug\net9.0\AppDevicesMedical.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Debug\net9.0\refint\AppDevicesMedical.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Debug\net9.0\AppDevicesMedical.pdb
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Debug\net9.0\AppDevicesMedical.genruntimeconfig.cache
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Debug\net9.0\ref\AppDevicesMedical.dll
+C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Debug\net9.0\swae.build.ex.cache

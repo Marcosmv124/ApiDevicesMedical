@@ -39,31 +39,7 @@ namespace AppDevicesMedical.Services
         {
             return await context.Usuarios.ToListAsync();
         }
-
-        //public async Task<string?> LoginAsync(LoginDto request)
-        //{
-        //    var usuario = await context.Usuarios
-        //        .Include(u => u.Rol)
-        //        .FirstOrDefaultAsync(u => u.NumeroEmpleado == request.NumeroEmpleado);
-
-        //    // Si el usuario no existe
-        //    if (usuario is null)
-        //        return "Empleado no encontrado";  // Detalles de error específicos
-
-        //    // Verificar la contraseña
-        //    if (new PasswordHasher<Usuario>().VerifyHashedPassword(usuario, usuario.PasswordHash, request.Password)
-        //        == PasswordVerificationResult.Failed)
-        //        return "Contraseña incorrecta";  // Detalles de error específicos
-
-        //    // Obtener permisos del rol
-        //    var permisos = await context.RolPermisos
-        //        .Where(rp => rp.IdRol == usuario.IdRol)
-        //        .Select(rp => rp.Permiso.Nombre)
-        //        .ToListAsync();
-
-        //    // Generar el token JWT
-        //    return CrearToken(usuario, permisos);
-        //}
+      
         public async Task<string?> LoginAsync(LoginDto request)
         {
             var usuario = await context.Usuarios
@@ -98,7 +74,7 @@ namespace AppDevicesMedical.Services
 
                 if (usuario.IntentosFallidos >= 3) // A los 3 intentos...
                 {
-                    usuario.BloqueoHasta = DateTime.Now.AddMinutes(5); // Bloqueo 2 min
+                    usuario.BloqueoHasta = DateTime.Now.AddMinutes(6); // Bloqueo 2 min
                     usuario.IntentosFallidos = 0; // Reiniciamos contador (opcional)
                 }
 
@@ -216,6 +192,7 @@ namespace AppDevicesMedical.Services
         }
     }
 }
+#region
 //public string CrearToken(Usuario usuario, List<string> permisos)
 //{
 //    string nombreRol = usuario.Rol?.Nombre_rol ?? "SinRol";
@@ -295,3 +272,31 @@ namespace AppDevicesMedical.Services
 
 //    return usuario;
 //}
+
+#endregion
+#region
+//public async Task<string?> LoginAsync(LoginDto request)
+//{
+//    var usuario = await context.Usuarios
+//        .Include(u => u.Rol)
+//        .FirstOrDefaultAsync(u => u.NumeroEmpleado == request.NumeroEmpleado);
+
+//    // Si el usuario no existe
+//    if (usuario is null)
+//        return "Empleado no encontrado";  // Detalles de error específicos
+
+//    // Verificar la contraseña
+//    if (new PasswordHasher<Usuario>().VerifyHashedPassword(usuario, usuario.PasswordHash, request.Password)
+//        == PasswordVerificationResult.Failed)
+//        return "Contraseña incorrecta";  // Detalles de error específicos
+
+//    // Obtener permisos del rol
+//    var permisos = await context.RolPermisos
+//        .Where(rp => rp.IdRol == usuario.IdRol)
+//        .Select(rp => rp.Permiso.Nombre)
+//        .ToListAsync();
+
+//    // Generar el token JWT
+//    return CrearToken(usuario, permisos);
+//}
+#endregion

@@ -8,8 +8,6 @@ C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Azure.Identity.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Humanizer.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.AspNetCore.Razor.Language.dll
@@ -33,18 +31,7 @@ C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.Extensions.DependencyModel.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.Extensions.Identity.Core.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.Extensions.Logging.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.Extensions.Options.dll
-C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.Extensions.Primitives.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.Identity.Client.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\Marco\OneDrive\Desktop\AppDevicesMedical\AppDevicesMedical\obj\Release\net9.0\PubTmp\Out\Microsoft.IdentityModel.Abstractions.dll

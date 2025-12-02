@@ -32,7 +32,7 @@ namespace AppDevicesMedical.Models
 
         public DbSet<Estandar> Estandares { get; set; }
 
-        public Dbset<PAUL> paules { get; set; }
+        
 
         // ╔══════════════════════════════════════════╗
         // ║         CONFIGURACIÓN DE TRANSFERENCIAS  ║
