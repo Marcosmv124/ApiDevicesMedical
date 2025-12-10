@@ -4,7 +4,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace AppDevicesMedical.Models
 {
     /// <summary>
-    /// Representa a un usuario del sistema médico.
     /// Mapeado a la tabla que contiene credenciales y datos generales.
     /// </summary>
     public class Usuario
